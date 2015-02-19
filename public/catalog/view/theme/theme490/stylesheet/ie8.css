@@ -1,0 +1,60 @@
+
+header #logo a img {
+	width:auto;
+	}
+.camera_caption {
+	width:auto;
+	}
+#cboxLoadingGraphic, #cboxLoadingOverlay {
+	display:none !important;
+	}
+div.sort {
+	width:300px;
+}
+div.limit {
+	width:200px;
+	}
+#search input {
+	max-width:none;
+	width:208px;
+	outline:none;
+	}
+.product-info .image {
+	margin-bottom:20px;
+	}
+.product-grid .image a, .box-product .image2 a, .product-list .image a, .box-product .image a {
+   display:block;
+}
+/* ------------- */
+@media (min-width: 768px) {
+	#cart .heading span.link_a i.fa-shopping-cart{
+		background: url(../image/ie8-bg-cart.png) no-repeat center	center transparent;
+	}
+	#cart .heading #cart-total {
+		background: url(../image/ie8-cart.png) no-repeat center	center transparent;
+	}
+}
+/* ------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+	aside .banner .s-desc h1 {
+		font-size: 16px;
+	}
+	aside .banner .s-desc h1 span{
+		font-size: 23px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	aside .banner .s-desc h1 {
+		font-size: 12px;
+	}
+	aside .banner .s-desc h1 span{
+		font-size: 16px;
+	}
+}
+/* --------------  */
+aside .banner>div>div:hover img{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+}
+aside .box.man a:hover img{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
