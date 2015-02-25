@@ -77,7 +77,7 @@ $(document).ready(function() {
 	$('#content .banner a').hover(function(){
 		$(this).parent().find('.s-desc h1').css({backgroundColor: '#c2c2c2'});
 		},function(){
-		$(this).parent().find('.s-desc h1').css({backgroundColor: '#841515'});
+		$(this).parent().find('.s-desc h1').css({backgroundColor: '#ed3237'});
 	   }
 	   )
 });

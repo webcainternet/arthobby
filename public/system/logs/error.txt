@@ -1,0 +1,14 @@
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Starting install
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_product table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_category table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_status table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_listing_type table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_order table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_attr_combination table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_attribute table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Created oc_mercadolivre_api_call table
+2015-02-24 14:13:32 - MERCADOLIVRE Module --> Completed install
+2015-02-24 15:52:36 - PHP Notice:  Indirect modification of overloaded property ControllerModuleMercadolivre::$error has no effect in /Users/fernandomendes/github/arthobby/public/admin/controller/module/mercadolivre.php on line 678
+2015-02-24 15:52:36 - PHP Notice:  Indirect modification of overloaded property ControllerModuleMercadolivre::$error has no effect in /Users/fernandomendes/github/arthobby/public/admin/controller/module/mercadolivre.php on line 682
+2015-02-24 15:52:36 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/fernandomendes/github/arthobby/public/admin/index.php:85) in /Users/fernandomendes/github/arthobby/public/vqmod/vqcache/vq2-system_engine_controller.php on line 30
+2015-02-24 15:52:36 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/fernandomendes/github/arthobby/public/admin/index.php:85) in /Users/fernandomendes/github/arthobby/public/vqmod/vqcache/vq2-system_engine_controller.php on line 31

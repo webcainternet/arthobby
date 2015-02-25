@@ -145,7 +145,7 @@ ul.sf-menu > ul > li.active>a  {
 	vertical-align:middle;
 }
 #menu-icon:hover:after {
-	color:#841515;
+	color:#ed3237;
 	}
 #menu-icon.active:after {
 	content:"\f139";	
@@ -212,7 +212,7 @@ ul.sf-menu > ul > li.active>a  {
 }
 .sf-menu-phone li i:hover {
 	cursor: pointer; 
-	color:#841515;
+	color:#ed3237;
 }
 .sf-menu-phone li i.opened {
 	background-position: center 7px; 
@@ -228,6 +228,6 @@ ul.sf-menu > ul > li.active>a  {
 .sf-menu-phone  li.active > a,
 .sf-menu-phone  li a:hover,
 .sf-menu-phone  li a.active{
-	color: #841515;
+	color: #ed3237;
 }
 

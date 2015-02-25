@@ -21,7 +21,7 @@
 	.box-product ul li .padding:hover .inner,
 	.product-grid ul li .padding:hover .left {
 		border-top-color: #3d9cdc;
-		background-color: #841515;
+		background-color: #ed3237;
 	}
 	.box-product .padding:hover .cart a.button,
 	.product-grid .padding:hover .cart a.button {
@@ -39,7 +39,7 @@
 	.box-product ul li .padding:hover .cart a.button span,
 	.product-grid ul li .padding:hover .cart a.button i,
 	.product-grid ul li .padding:hover .cart a.button span {
-		color: #841515;
+		color: #ed3237;
 	}	
 	
 	.box-heading i,
@@ -859,7 +859,7 @@
 		line-height:40px;
 	}
 	#search .button-search:hover {
-		background:#841515;
+		background:#ed3237;
 	}
 	/* Cart */
 	.cart-position #cart .heading span.link_a b,
@@ -897,7 +897,7 @@
 		cursor:pointer;
 	}
 	aside .box-heading:hover i{
-		color:#841515;
+		color:#ed3237;
 	}
 	.box-heading i {
 		float:right;
@@ -971,7 +971,7 @@
 	}
 	body.ind #body .swipe .heading-1:hover,
 	body.ind #body .swipe .heading1:hover {
-		color:#841515;
+		color:#ed3237;
 	}
 	header .toprow {
 		display:none;

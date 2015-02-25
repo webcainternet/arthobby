@@ -277,7 +277,7 @@ a {
 }
 a:hover {
 	text-decoration:none;
-	color:#841515;
+	color:#ed3237;
 }
 a img {
 	border: none;
@@ -387,7 +387,7 @@ body.ind .swipe-left {
 }
 .swipe-menu .box-currency .ul a:hover,
 .swipe-menu .box-currency .ul a span.act {
-	color:#841515;
+	color:#ed3237;
 }
 #body .swipe .swipe-menu .box-currency .heading {
 	display:none;
@@ -410,7 +410,7 @@ body.ind .swipe-left {
 	line-height:26px;
 	vertical-align:middle;
 	margin-top:0;
-	color:#841515;
+	color:#ed3237;
 	padding-left:0;
 	margin-right:9px;
 }
@@ -445,7 +445,7 @@ body.ind .swipe-left {
 	padding:0
 }
 .swipe-menu .box-language .ul a:hover {
-	color:#841515;
+	color:#ed3237;
 }
 .swipe-menu .box-language .ul a:first-child {
 	margin-left:30px;
@@ -482,7 +482,7 @@ body.ind .swipe-left {
 	line-height:26px;
 	vertical-align:middle;
 	margin-top:0;
-	color:#841515;
+	color:#ed3237;
 	text-align:center;
 	margin-right:9px;
 }
@@ -496,13 +496,13 @@ body div.shadow {
 	display:none;
 }
 #body .swipe .swipe-menu li a:hover {
-	color:#841515;
+	color:#ed3237;
 }
 #body .swipe .swipe-menu li a {
 	color:#7E7E7E;
 }
 #body .swipe .swipe-menu li a i {
-	color:#841515;
+	color:#ed3237;
 	font-size:26px;
 	margin-right:9px;
 	vertical-align:middle;
@@ -537,7 +537,7 @@ body div.shadow {
 	text-decoration: inherit;
 	text-align: center;
 	font-size:26px;
-	color:#841515;
+	color:#ed3237;
 	margin-right:9px;
 }
 #body .swipe .swipe-menu .foot li+li a:before {
@@ -607,7 +607,7 @@ body div.shadow {
     z-index: 2;
 }
 #back-top a:hover span {
-	background:#841515;
+	background:#ed3237;
 }
 #back-top a:hover span:after {
 	color:#fff;
@@ -652,7 +652,8 @@ header .top-links .links {
 }
 header .top-links {
 	/* background:#c2c2c2; */
-	background-color: rgba(255, 255, 255, 0.8);
+	 background-color: rgba(255, 255, 255, 0.8); 
+	/* background: #FABDBD; */
 	height: 60px;
 	padding: 16px 16px 16px 5px;
 	border-radius:6px 6px 0 0;
@@ -686,11 +687,11 @@ header .toprow .links li {
 	margin-right:0;
 }
 header .links a.active, header .links a:hover {
-	color:#841515;
+	color:#ed3237;
 	text-decoration:underline;
 }
 header .top-links .links li:first-child a.active i, header .top-links .links li:first-child a:hover i{
-	color:#841515;
+	color:#ed3237;
 }
 header .links a {
 	display:inline-block;
@@ -790,10 +791,10 @@ header .toprow .links li a.active, header .toprow .links a:hover{
 /*======================= HEADER =======================*/
 header {
 	position: relative;
-	/* background:#841515; */
-	background-image: url('/image/data/bg01.jpg');
-	background-position: center;
-	background-size: 110%;
+	/* background:#ed3237; */
+	background-image: url('/image/data/aero1.jpg');
+	background-position: 0px -375px;
+	background-size: 100%;
 	padding-top:30px;
 }
 /*======================= LOGO =======================*/
@@ -819,7 +820,7 @@ header #logo {
 	position:relative;
 }
 #cart .heading span.link_a i.fa-shopping-cart{
-	color:#841515;
+	color:#ed3237;
 	font-size:32px;
 	line-height:60px;
 	height:60px;
@@ -905,7 +906,7 @@ header #cart .cart td.name a {
 header #cart .cart td .total {
 	font-size:12px;
 	font-weight:bold;
-	color:#841515;
+	color:#ed3237;
 }
 header #cart .cart .item-cart-1 td {
 	padding-top:0;
@@ -996,10 +997,10 @@ header #cart .cart .remove>span{
 	cursor:pointer;
 }
 header #cart .cart .remove>span:hover {
-	color:#841515;
+	color:#ed3237;
 }
 header #cart .cart .remove>span:hover i{
-	color:#841515;
+	color:#ed3237;
 }
 header #cart .cart .remove img {
 	cursor: pointer;
@@ -1021,7 +1022,7 @@ header #cart table.total td b {
 	font-style:italic;
 }
 header #cart table.total td {
-	color: #841515;
+	color: #ed3237;
 	padding-left:5px;
 	padding-right:10px;
 }
@@ -1076,7 +1077,7 @@ header #cart .empty {
 	line-height:29px;
 	color:#fff;
 	padding:0 20px 0 21px;
-	background:#841515;
+	background:#ed3237;
 }
 #search .button-search:hover {
 	color:#fff;
@@ -1119,7 +1120,7 @@ header #cart .empty {
 	font-size:16px;
 	line-height:19px;
 	font-weight:500;
-	color:#841515;
+	color:#ed3237;
 }
 .price .price-new {
 	margin-right:5px;
@@ -1176,7 +1177,7 @@ header #cart .empty {
 }
 
 .box-product ul li .quick-view-button:hover {
-	color:#841515;
+	color:#ed3237;
 }
 .box-product ul li .quick-view-button i {
 	width:30px;
@@ -1209,7 +1210,7 @@ header #cart .empty {
 aside .box-product ul li .padding:hover .inner,
 .box-product .related-slider li:hover .inner {
 	border-top-color: #3d9cdc;
-	background-color: #841515;
+	background-color: #ed3237;
 }
 aside .box-product ul li .padding:hover .cart a.button,
 .box-product .related-slider li:hover .cart a.button {
@@ -1227,7 +1228,7 @@ aside .box-product ul li .padding:hover .cart a.button i,
 aside .box-product ul li .padding:hover .cart a.button span,
 .box-product .related-slider li:hover .cart a.button i,
 .box-product .related-slider li:hover .cart a.button span {
-	color: #841515;
+	color: #ed3237;
 }
 .product_description{
 	margin-bottom:10px;
@@ -1359,7 +1360,7 @@ aside .box-product ul li .padding:hover .cart a.button span,
 }
 /*======================= BOX PRICE =======================*/
 .box-product .price, .product-grid .price{
-	color:#841515;
+	color:#ed3237;
 	margin-bottom:13px;
 }
 .product-list .price{
@@ -1439,7 +1440,7 @@ aside .box .box-content .box-product ul>li {
 	margin-bottom:0;
 }
 .box-product.box-subcat .name.subcatname a:hover {
-	color:#841515;
+	color:#ed3237;
 }
 .box-product.box-subcat .name.subcatname a {
 	color:#777;
@@ -1451,7 +1452,7 @@ aside .box .box-content .box-product ul>li {
 }
 li.parent> i:hover {
 	cursor:pointer;
-	color:#841515;
+	color:#ed3237;
 }
 li.parent> i {
 	float:right;
@@ -1478,7 +1479,7 @@ li.parent> i {
 }
 .box-category > ul > li.active>a i,
 .box-category > ul > li > a:hover i {
-	color:#841515;
+	color:#ed3237;
 }
 .box-category > ul > li > a i {
 	font-size:15px;
@@ -1496,7 +1497,7 @@ li.parent> i {
 }
 .box-category > ul > li.active>a, 
 .box-category > ul > li>a:hover {
-	color:#841515;
+	color:#ed3237;
 }
 .box-category > ul > li:first-child {
 	border:none;
@@ -1622,7 +1623,7 @@ aside .info li a i,
 .content ul li a i, 
 .sitemap-info ul li a i,
 .manufacturer-list ul li a i{
-	color:#841515;
+	color:#ed3237;
 	font-size:15px;
 	line-height:18px;
 	margin-right:8px;
@@ -1661,7 +1662,7 @@ aside .info li a:hover,
 .content ul li a:hover, 
 .sitemap-info ul li a:hover,
 .manufacturer-list ul li a:hover{
-	color:#841515;
+	color:#ed3237;
 }
 /*======================= BANNERS =======================*/
 .banner {
@@ -1681,6 +1682,7 @@ aside .banner {
 	border:1px solid #fff;
 	margin-left:0;
 	margin-right:0;
+	display: none;
 }
 #content .banner>div.col-sm-4 {
 	width:34.0964%;
@@ -1732,7 +1734,7 @@ aside .banner {
 }
 #content .banner .s-desc h1{
 	padding:9px 0 8px;
-	background:#841515;
+	background:#ed3237;
 	margin-bottom:13px;
 	color:#fff;
 }
@@ -1748,7 +1750,7 @@ aside .banner {
 	padding:0 25px;
 }
 .banner .s-desc h2{
-	color:#841515;
+	color:#ed3237;
 	font-size:17px;
 	line-height:20px;
 	font-weight:bold;
@@ -1790,7 +1792,7 @@ aside .banner .s-desc > span{
 aside .banner .s-desc > span i{
 	display:inline-block;
 	position:relative;
-	color:#841515;
+	color:#ed3237;
 	font-size:15px;
 	line-height:22px;
 	height:18px;
@@ -1812,7 +1814,7 @@ a.button, a.button-prod {
 	text-decoration: none;
 	cursor: pointer;
 	color:#fff;
-	background:#841515;
+	background:#ed3237;
 	font-size:14px;
 	line-height:21px;
 	padding:6px 25px 7px;
@@ -2058,15 +2060,15 @@ i.fa.fa-trash-o-o {
 	border:1px solid #dcdcdc;
 }
 .pagination .links a:hover {
-	color:#841515;
-	border:1px solid #841515;
+	color:#ed3237;
+	border:1px solid #ed3237;
 }
 .pagination .links b:hover {
 	cursor:default
 }
 .pagination .links b {
-	color:#841515;
-	border:1px solid #841515;
+	color:#ed3237;
+	border:1px solid #ed3237;
 	background:#fff;
 	display: inline-block;
 	padding: 4px 10px;
@@ -2138,7 +2140,7 @@ i.fa.fa-trash-o-o {
 	margin-top:2px;
 }
 .link-login:hover {
-	color:#841515;
+	color:#ed3237;
 	text-decoration:none;
 }
 .padd-form {
@@ -2253,7 +2255,7 @@ table.list .center {
 	margin-bottom:25px;
 }
 .checkout-heading {
-	background: #841515;
+	background: #ed3237;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -2501,7 +2503,7 @@ table.radio tbody td {
 	margin-bottom:20px;
 }
 .contact-info .contact-box i {
-	color:#841515;
+	color:#ed3237;
 	font-size:26px;
 	width:1.25em;
 	vertical-align:middle;
@@ -2563,7 +2565,7 @@ table.radio tbody td {
 	color:#000;
 }
 .checkout-cart .cart-bottom table#total  .cart-total1 {
-	color:#841515;
+	color:#ed3237;
 	font-size:16px;
 	font-weight:500;
 }
@@ -2581,12 +2583,12 @@ table.radio tbody td {
 .checkout-product .table td.price {
 	text-align:left;
 	font-size:16px;
-	color:#841515;
+	color:#ed3237;
 }
 .table .total, .table .price {
 	text-align: center;
 	font-size:16px;
-	color:#841515;
+	color:#ed3237;
 	font-weight:500;
 }
 .table .price b{
@@ -2677,7 +2679,7 @@ input#sub_category {
 	font-weight: bold;
 	font-size:17px;
 	line-height:normal;
-	color:#841515;
+	color:#ed3237;
 }
 /*======================= IMAGES PRODUCT =======================*/
 .image2 {
@@ -2721,7 +2723,7 @@ input#sub_category {
 	border:1px solid #dcdcdc;
 }
 .manufacturer-heading span {
-	background:#841515;
+	background:#ed3237;
 	color:#fff;
 	text-transform:uppercase;
 	display:inline-block;
@@ -2768,7 +2770,7 @@ input#sub_category {
 	font-size:15px;
 }
 .manuf-p a:hover b{
-	color:#841515;
+	color:#ed3237;
 	text-decoration:underline;
 }
 /*======================= PRODUCT PAGE =======================*/
@@ -2941,7 +2943,7 @@ h1.style-1 {
 }
 #list_a:hover, #list_b,
 #grid_a:hover, #grid_b{
-	color:#841515;
+	color:#ed3237;
 }
 .product-filter .display {
 	position:relative;
@@ -3134,7 +3136,7 @@ h1.style-1 {
 	text-decoration:underline;
 }
 .product-info .description .product-section a:hover{
-	color:#841515;
+	color:#ed3237;
 }
 .product-info .description .product-section span {
 	color:#333;
@@ -3159,7 +3161,7 @@ h1.style-1 {
 	margin-bottom:20px;
 }
 .product-info .price .price-new{
-	color:#841515;
+	color:#ed3237;
 	font-weight:500;
 	font-size:25px;
 	margin-right:4px;
@@ -3213,7 +3215,7 @@ h1.style-1 {
 }
 .product-info .wishlist a:hover,
 .product-info .compare a:hover {
-	color:#841515;
+	color:#ed3237;
 }
 .product-info .wishlist a, 
 .product-info .compare a{
@@ -3310,7 +3312,7 @@ img#captcha {
 	margin-bottom:20px;
 }
 .product-info .review a:hover {
-	color:#841515;
+	color:#ed3237;
 }
 .product-info .review a{
 	color:#000;
@@ -3345,7 +3347,7 @@ img#captcha {
 	float:right;
 }
 .tabs .tab-heading:hover i{
-	color:#841515;
+	color:#ed3237;
 }
 
 .tabs .tab-heading {
@@ -3464,9 +3466,13 @@ html[lang="de"] .related .cart a.button i {
 footer {
 	margin-top:30px;
 	padding-top:36px;
-	background:#222222;
+	
+	background-image: url('/image/data/bgfooter1.jpg');
+	background-position: center;
 	clear: both;
 	overflow: hidden;
+	padding-bottom: 50px;
+	padding-top: 70px;
 }
 .common-home footer {
 	margin-top:0;
@@ -3488,7 +3494,7 @@ footer {
 	color:#fff;
 	}
 .block .block-content li a {
-	color:#841515;
+	color:#ff6b7c;
 	font-size:13px;
 	line-height:16px;
 	text-transform:uppercase;
@@ -3531,7 +3537,7 @@ footer {
 .foot-phone {
 	font-size:16px;
 	line-height:22px;
-	color:#841515;
+	color:#ff6b7c;
 	margin-bottom:13px;
 }
 .foot-phone span{
@@ -3677,7 +3683,7 @@ span.toggle {
 	color:#fff;
 }
 .success i:hover {
-	color:#841515;
+	color:#ed3237;
 }
 .success i.fa.fa-thumbs-up{
 	font-size:31px;
@@ -3737,7 +3743,7 @@ span.toggle {
 /*======================= BREADCRUMB =======================*/
 .breadcrumb a:hover ,
 .breadcrumb a.last {
-	color:#841515;
+	color:#ed3237;
 }
 .breadcrumb a{
 	color:#777;
@@ -3767,7 +3773,7 @@ span.toggle {
 }
 .wishlist a:hover, 
 .compare a:hover{
-	color:#841515;
+	color:#ed3237;
 }
 .box-product .wishlist a, 
 .box-product .compare a,

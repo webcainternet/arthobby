@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Feb 19, 2015 at 04:47 PM
+-- Generation Time: Feb 25, 2015 at 10:23 AM
 -- Server version: 5.5.38
 -- PHP Version: 5.3.29
 
@@ -40,7 +40,7 @@ CREATE TABLE `oc_address` (
   `postcode` varchar(10) NOT NULL,
   `country_id` int(11) NOT NULL DEFAULT '0',
   `zone_id` int(11) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_address`
@@ -48,7 +48,8 @@ CREATE TABLE `oc_address` (
 
 INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, `company`, `company_id`, `tax_id`, `address_1`, `address_2`, `city`, `postcode`, `country_id`, `zone_id`) VALUES
 (1, 1, 'Demo', 'Demo', '', '', '', 'Demo', '', 'Demo', '5555', 222, 3530),
-(2, 2, 'admin', 'admin', '', '', '', '111', '', '111', '111', 222, 3515);
+(2, 2, 'admin', 'admin', '', '', '', '111', '', '111', '111', 222, 3515),
+(3, 3, 'Fernando', 'Mendes', '', '', '', 'Rua Lomas Valentinas, 241', '', 'São Caetano do Sul ', '09560260', 30, 464);
 
 -- --------------------------------------------------------
 
@@ -313,29 +314,22 @@ CREATE TABLE `oc_category` (
   `status` tinyint(1) NOT NULL,
   `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=83 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_category`
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(25, 'data/Fly HUMMER HT2 1 copy.png', 0, 1, 1, 5, 1, '2009-01-31 01:04:25', '2014-11-17 17:38:44'),
-(20, 'data/Anycool T818  1 copy.png', 0, 1, 1, 1, 1, '2009-01-05 21:49:43', '2014-11-17 17:36:49'),
-(24, 'data/FLY E176 1 copy.png', 0, 1, 1, 4, 1, '2009-01-20 02:36:26', '2014-11-17 17:38:05'),
-(17, 'data/FLY E146 1 copy.png', 0, 1, 1, 2, 1, '2009-01-03 21:08:57', '2014-11-17 17:37:11'),
-(28, 'data/HeartStart-OnSite2.png', 57, 1, 1, 4, 1, '2009-02-02 13:11:12', '2014-11-18 11:57:27'),
-(29, 'data/Blood-Pressure-TS1-2.png', 57, 1, 1, 2, 1, '2009-02-02 13:11:37', '2014-11-18 11:55:55'),
-(30, 'data/Medtronic-Lifepak-Physio3.png', 57, 1, 1, 1, 1, '2009-02-02 13:11:59', '2014-11-18 11:57:57'),
-(31, 'data/Edan-Pulse3.png', 57, 1, 0, 3, 1, '2009-02-03 14:17:24', '2014-11-18 11:57:00'),
-(35, 'data/ECG-3306G-2.png', 29, 0, 0, 0, 1, '2010-09-17 10:06:48', '2014-11-18 11:56:40'),
-(36, 'data/Blood-Pressure3.png', 29, 0, 0, 0, 1, '2010-09-17 10:07:13', '2014-11-18 11:56:15'),
-(57, 'data/FLY E145 1 copy.png', 0, 1, 1, 3, 1, '2011-04-26 08:53:16', '2014-11-17 17:37:31'),
-(59, 'data/HTC Desire 1 copy.png', 0, 0, 1, 6, 1, '2012-12-04 17:18:18', '2014-11-17 17:41:25'),
-(70, '', 0, 1, 1, 7, 1, '2014-08-18 14:25:42', '2014-11-17 17:41:46'),
-(71, '', 0, 1, 1, 8, 1, '2014-08-18 14:26:03', '2014-11-17 17:42:06'),
-(72, '', 0, 1, 1, 9, 1, '2014-08-18 14:26:21', '2014-11-17 17:42:28'),
-(73, '', 0, 1, 1, 10, 1, '2014-08-18 14:26:41', '2014-11-17 17:40:31');
+(82, '', 0, 0, 1, 0, 1, '2015-02-24 16:52:07', '2015-02-24 16:52:07'),
+(79, '', 77, 0, 1, 0, 1, '2015-02-24 14:09:15', '2015-02-24 14:09:15'),
+(80, '', 77, 0, 1, 0, 1, '2015-02-24 16:51:42', '2015-02-24 16:51:42'),
+(81, '', 0, 0, 1, 0, 1, '2015-02-24 16:52:00', '2015-02-24 16:52:00'),
+(76, '', 74, 0, 1, 0, 1, '2015-02-24 13:58:57', '2015-02-24 16:45:43'),
+(77, '', 0, 0, 1, 0, 1, '2015-02-24 13:59:34', '2015-02-24 13:59:34'),
+(78, '', 77, 0, 1, 0, 1, '2015-02-24 14:00:22', '2015-02-24 14:00:22'),
+(75, '', 74, 0, 1, 0, 1, '2015-02-24 13:58:34', '2015-02-24 13:58:34'),
+(74, '', 0, 0, 1, 0, 1, '2015-02-24 13:57:51', '2015-02-24 13:57:51');
 
 -- --------------------------------------------------------
 
@@ -357,22 +351,15 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`) VALUES
-(17, 4, 'Home health', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(29, 4, 'Conse ctetur adipisicing ', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(24, 4, 'Medical apparel', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(57, 4, 'Patient care', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(35, 4, 'Ut labore et ', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(36, 4, 'Dolore magna aliqua', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(59, 4, 'Mobility', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(31, 4, 'Elit sed do eiusmod tempor', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(30, 4, 'Lorem ipsum dolor sit amet ', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(28, 4, 'Incididunt ut labor', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(25, 4, 'First Aid', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n', '', ''),
-(20, 4, 'Diagnostics', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', 'Example of category description', ''),
-(72, 4, 'Medical nutrition', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(73, 4, 'Wound care', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(70, 4, 'Bracers &amp; Support', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', ''),
-(71, 4, 'Bariatric products', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '');
+(74, 4, 'Miniaturas', '', '', ''),
+(75, 4, 'Carros 1:24', '', '', ''),
+(76, 4, 'Caminhões 1:32', '', '', ''),
+(77, 4, 'Plastimodelismo', '', '', ''),
+(78, 4, 'Aviação 1:72', '', '', ''),
+(79, 4, 'Aviação 1:144', '', '', ''),
+(80, 4, 'Helicóptero 1:144', '', '', ''),
+(81, 4, 'Tintas', '', '', ''),
+(82, 4, 'Colas', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -384,15 +371,6 @@ CREATE TABLE `oc_category_filter` (
   `category_id` int(11) NOT NULL,
   `filter_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_category_filter`
---
-
-INSERT INTO `oc_category_filter` (`category_id`, `filter_id`) VALUES
-(20, 1),
-(20, 2),
-(20, 3);
 
 -- --------------------------------------------------------
 
@@ -411,33 +389,23 @@ CREATE TABLE `oc_category_path` (
 --
 
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
-(25, 25, 0),
-(28, 28, 1),
-(28, 57, 0),
-(35, 57, 0),
-(35, 29, 1),
-(35, 35, 2),
-(36, 57, 0),
-(36, 29, 1),
-(36, 36, 2),
-(29, 29, 1),
-(29, 57, 0),
-(30, 30, 1),
-(30, 57, 0),
-(31, 31, 1),
-(31, 57, 0),
-(20, 20, 0),
-(27, 20, 0),
-(27, 27, 1),
-(26, 20, 0),
-(26, 26, 1),
-(24, 24, 0),
+(80, 80, 1),
+(82, 82, 0),
+(81, 81, 0),
+(79, 77, 0),
+(80, 77, 0),
+(79, 79, 1),
+(78, 78, 1),
+(78, 77, 0),
+(77, 77, 0),
+(76, 76, 1),
+(76, 74, 0),
+(75, 75, 1),
 (18, 18, 0),
 (45, 18, 0),
 (45, 45, 1),
 (46, 18, 0),
 (46, 46, 1),
-(17, 17, 0),
 (33, 33, 0),
 (34, 34, 0),
 (37, 34, 0),
@@ -479,12 +447,8 @@ INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 (55, 55, 1),
 (56, 34, 0),
 (56, 56, 1),
-(57, 57, 0),
-(59, 59, 0),
-(70, 70, 0),
-(71, 71, 0),
-(72, 72, 0),
-(73, 73, 0);
+(75, 74, 0),
+(74, 74, 0);
 
 -- --------------------------------------------------------
 
@@ -514,22 +478,15 @@ CREATE TABLE `oc_category_to_store` (
 --
 
 INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
-(17, 0),
-(20, 0),
-(24, 0),
-(25, 0),
-(28, 0),
-(29, 0),
-(30, 0),
-(31, 0),
-(35, 0),
-(36, 0),
-(57, 0),
-(59, 0),
-(70, 0),
-(71, 0),
-(72, 0),
-(73, 0);
+(74, 0),
+(75, 0),
+(76, 0),
+(77, 0),
+(78, 0),
+(79, 0),
+(80, 0),
+(81, 0),
+(82, 0);
 
 -- --------------------------------------------------------
 
@@ -895,7 +852,7 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(4, 'Real', 'BRL', 'R$ ', '', '2', 1.00000000, 1, '2015-02-19 15:52:27');
+(4, 'Real', 'BRL', 'R$ ', '', '2', 1.00000000, 1, '2015-02-25 01:36:19');
 
 -- --------------------------------------------------------
 
@@ -923,7 +880,7 @@ CREATE TABLE `oc_customer` (
   `approved` tinyint(1) NOT NULL,
   `token` varchar(255) NOT NULL,
   `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_customer`
@@ -931,7 +888,8 @@ CREATE TABLE `oc_customer` (
 
 INSERT INTO `oc_customer` (`customer_id`, `store_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `password`, `salt`, `cart`, `wishlist`, `newsletter`, `address_id`, `customer_group_id`, `ip`, `status`, `approved`, `token`, `date_added`) VALUES
 (1, 0, 'Demo', 'Demo', 'admin@admin.com', '555555555555', '', 'a8e36cf1a623773890e55496017a9652ea345a11', '5f5dd0642', 'a:2:{s:4:"43::";i:2;s:4:"29::";i:1;}', 'a:12:{i:0;s:2:"40";i:1;s:2:"29";i:2;s:2:"35";i:3;s:2:"30";i:4;s:3:"42;";i:5;s:3:"30;";i:6;s:2:"45";i:7;s:2:"42";i:8;s:2:"49";i:9;s:2:"46";i:10;s:2:"34";i:11;s:2:"43";}', 0, 1, 1, '192.168.9.1', 1, 1, '', '2014-01-14 09:29:45'),
-(2, 0, 'admin', 'admin', 'admin@demolink.org', '111', '', '4985a24d9991678e204319c83121df8ae9868d32', 'cd1f405b1', 'a:1:{s:4:"29::";i:2;}', 'a:2:{i:0;s:2:"43";i:1;s:2:"29";}', 0, 2, 1, '192.168.9.1', 1, 1, '', '2014-08-15 15:51:41');
+(2, 0, 'admin', 'admin', 'admin@demolink.org', '111', '', '4985a24d9991678e204319c83121df8ae9868d32', 'cd1f405b1', 'a:1:{s:4:"29::";i:2;}', 'a:2:{i:0;s:2:"43";i:1;s:2:"29";}', 0, 2, 1, '192.168.9.1', 1, 1, '', '2014-08-15 15:51:41'),
+(3, 0, 'Fernando', 'Mendes', 'fernando.mendes@webca.com.br', '11 976495157', '', '654a5cf00ef2a416cf3b718b88a3bee9a1b174b4', 'ce71af82d', 'a:0:{}', 'a:0:{}', 0, 3, 1, '127.0.0.1', 1, 1, '', '2015-02-24 13:49:10');
 
 -- --------------------------------------------------------
 
@@ -1026,7 +984,7 @@ CREATE TABLE `oc_customer_ip` (
   `customer_id` int(11) NOT NULL,
   `ip` varchar(40) NOT NULL,
   `date_added` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_customer_ip`
@@ -1034,7 +992,8 @@ CREATE TABLE `oc_customer_ip` (
 
 INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added`) VALUES
 (1, 1, '192.168.9.1', '2014-01-14 09:29:51'),
-(2, 2, '192.168.9.1', '2014-08-15 15:51:49');
+(2, 2, '192.168.9.1', '2014-08-15 15:51:49'),
+(3, 3, '127.0.0.1', '2015-02-24 13:49:11');
 
 -- --------------------------------------------------------
 
@@ -1180,7 +1139,7 @@ CREATE TABLE `oc_extension` (
 `extension_id` int(11) NOT NULL,
   `type` varchar(32) NOT NULL,
   `code` varchar(32) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=498 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=503 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_extension`
@@ -1194,7 +1153,7 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (59, 'total', 'total'),
 (468, 'module', 'latest'),
 (390, 'total', 'credit'),
-(387, 'shipping', 'flat'),
+(502, 'shipping', 'correios'),
 (349, 'total', 'handling'),
 (350, 'total', 'low_order_fee'),
 (389, 'total', 'coupon'),
@@ -1202,7 +1161,6 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (464, 'module', 'account'),
 (393, 'total', 'reward'),
 (398, 'total', 'voucher'),
-(407, 'payment', 'free_checkout'),
 (444, 'module', 'featured'),
 (440, 'module', 'banner'),
 (467, 'module', 'information'),
@@ -1210,11 +1168,14 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (466, 'module', 'bestseller'),
 (493, 'module', 'newcarousel'),
 (449, 'module', 'special'),
-(481, 'shipping', 'free'),
 (494, 'module', 'compare'),
 (495, 'module', 'vqmod_manager'),
 (496, 'module', 'category'),
-(497, 'module', 'manufacturer');
+(497, 'module', 'manufacturer'),
+(498, 'payment', 'pagseguro'),
+(499, 'module', 'mercadolivre'),
+(500, 'payment', 'mercadopago2'),
+(501, 'payment', 'bancosantander');
 
 -- --------------------------------------------------------
 
@@ -1359,10 +1320,10 @@ CREATE TABLE `oc_information_description` (
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`) VALUES
-(5, 4, 'Terms &amp; Conditions', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
-(3, 4, 'Privacy Policy', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
-(4, 4, 'About', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
-(6, 4, 'Delivery', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n');
+(5, 4, 'Termos e condições', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
+(3, 4, 'Políticas de privacidade', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
+(4, 4, 'Sobre nós', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n'),
+(6, 4, 'Informações de entrega', '&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-thumbs-up&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non proident&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-clock-o&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-gift&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore et&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-refresh&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;Excepteur sint occaecat cupidatat non&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n\r\n&lt;div class=&quot;about-page&quot;&gt;&lt;i class=&quot;fa fa-truck&quot;&gt;&amp;nbsp;&lt;/i&gt;\r\n\r\n&lt;div class=&quot;extra-wrap&quot;&gt;\r\n&lt;h3&gt;proident sunt in culpa qui offici&lt;/h3&gt;\r\n\r\n&lt;p&gt;Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n');
 
 -- --------------------------------------------------------
 
@@ -1572,6 +1533,126 @@ INSERT INTO `oc_manufacturer_to_store` (`manufacturer_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `oc_mercadolivre_api_call`
+--
+
+CREATE TABLE `oc_mercadolivre_api_call` (
+`id` bigint(11) NOT NULL,
+  `callId` varchar(200) NOT NULL,
+  `callType` varchar(50) NOT NULL,
+  `dateTime` datetime NOT NULL,
+  `done` int(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_mercadolivre_attribute`
+--
+
+CREATE TABLE `oc_mercadolivre_attribute` (
+`id` bigint(11) NOT NULL,
+  `combinationId` int(8) NOT NULL,
+  `attributeId` varchar(200) NOT NULL,
+  `attributeValueId` varchar(200) NOT NULL,
+  `attributeValue` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_mercadolivre_attr_combination`
+--
+
+CREATE TABLE `oc_mercadolivre_attr_combination` (
+`id` bigint(11) NOT NULL,
+  `mercaId` varchar(200) NOT NULL,
+  `product_id` bigint(15) NOT NULL,
+  `quantity` int(8) NOT NULL,
+  `price` decimal(8,2) NOT NULL,
+  `picture` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_mercadolivre_category`
+--
+
+CREATE TABLE `oc_mercadolivre_category` (
+`id` int(11) NOT NULL,
+  `mercaId` varchar(200) NOT NULL,
+  `name` varchar(240) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_mercadolivre_listing_type`
+--
+
+CREATE TABLE `oc_mercadolivre_listing_type` (
+`id` int(11) NOT NULL,
+  `code` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_mercadolivre_order`
+--
+
+CREATE TABLE `oc_mercadolivre_order` (
+`id` bigint(11) NOT NULL,
+  `mercaOrderId` varchar(200) NOT NULL,
+  `order_id` bigint(11) NOT NULL,
+  `feedback` int(1) NOT NULL,
+  `stopSync` int(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_mercadolivre_product`
+--
+
+CREATE TABLE `oc_mercadolivre_product` (
+`id` bigint(11) NOT NULL,
+  `product_id` bigint(15) NOT NULL,
+  `mercaId` varchar(240) NOT NULL,
+  `option` varchar(240) DEFAULT NULL,
+  `status` varchar(240) NOT NULL,
+  `substatus` varchar(240) NOT NULL,
+  `url` varchar(240) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_mercadolivre_status`
+--
+
+CREATE TABLE `oc_mercadolivre_status` (
+`id` int(11) NOT NULL,
+  `merca_status` varchar(200) DEFAULT NULL,
+  `oc_status` int(11) DEFAULT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_mercadolivre_status`
+--
+
+INSERT INTO `oc_mercadolivre_status` (`id`, `merca_status`, `oc_status`) VALUES
+(1, 'confirmed', 25),
+(2, 'payment_required', 18),
+(3, 'payment_in_process', 26),
+(4, 'paid', 20),
+(5, 'cancelled', 27);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `oc_option`
 --
 
@@ -1758,13 +1839,14 @@ CREATE TABLE `oc_order` (
   `accept_language` varchar(255) NOT NULL,
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order`
 --
 
 INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, `store_name`, `store_url`, `customer_id`, `customer_group_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `payment_firstname`, `payment_lastname`, `payment_company`, `payment_company_id`, `payment_tax_id`, `payment_address_1`, `payment_address_2`, `payment_city`, `payment_postcode`, `payment_country`, `payment_country_id`, `payment_zone`, `payment_zone_id`, `payment_address_format`, `payment_method`, `payment_code`, `shipping_firstname`, `shipping_lastname`, `shipping_company`, `shipping_address_1`, `shipping_address_2`, `shipping_city`, `shipping_postcode`, `shipping_country`, `shipping_country_id`, `shipping_zone`, `shipping_zone_id`, `shipping_address_format`, `shipping_method`, `shipping_code`, `comment`, `total`, `order_status_id`, `affiliate_id`, `commission`, `language_id`, `currency_id`, `currency_code`, `currency_value`, `ip`, `forwarded_ip`, `user_agent`, `accept_language`, `date_added`, `date_modified`) VALUES
+(9, 0, 'ART2015', 0, 'Art Hobby', 'http://homolog.arthobby.com.br/', 3, 1, 'Fernando', 'Mendes', 'fernando.mendes@webca.com.br', '11 976495157', '', 'Fernando', 'Mendes', '', '', '', 'Rua Lomas Valentinas, 241', '', 'São Caetano do Sul ', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'PagSeguro', 'pagseguro', 'Fernando', 'Mendes', '', 'Rua Lomas Valentinas, 241', '', 'São Caetano do Sul ', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'Taxa fixa de frete', 'flat.flat', '', 223.6900, 17, 0, 0.0000, 4, 4, 'BRL', 1.00000000, '127.0.0.1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36', 'en-US,en;q=0.8,pt;q=0.6', '2015-02-24 13:49:23', '2015-02-24 13:49:28'),
 (2, 0, 'INV-2012-00', 0, 'Tires &amp; Wheels', 'http://192.168.9.23/456/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 927.1883, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0', 'en-gb,en;q=0.5', '2014-08-19 14:47:50', '2014-08-19 14:47:50'),
 (3, 0, 'INV-2012-00', 0, 'Tires &amp; Wheels', 'http://192.168.9.23/456/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 927.1883, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0', 'en-gb,en;q=0.5', '2014-08-19 14:48:50', '2014-08-19 14:48:50'),
 (4, 0, 'INV-2012-00', 0, 'Tires &amp; Wheels', 'http://192.168.9.23/456/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '', 'admin', 'admin', '', '', '', '111', '', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Cash On Delivery', 'cod', 'admin', 'admin', '', '111', '', '111', '111', 'United Kingdom', 222, 'Anglesey', 3515, '', 'Flat Shipping Rate', 'flat.flat', '', 927.1883, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '192.168.9.1', '192.168.9.23', 'Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0', 'en-gb,en;q=0.5', '2014-08-19 14:52:00', '2014-08-19 14:52:00'),
@@ -1879,7 +1961,14 @@ CREATE TABLE `oc_order_history` (
   `notify` tinyint(1) NOT NULL DEFAULT '0',
   `comment` text NOT NULL,
   `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_order_history`
+--
+
+INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id`, `notify`, `comment`, `date_added`) VALUES
+(2, 9, 17, 1, '\n                  Se não tiver pago, acesse a sua fatura do PagSeguro para efetuar o Pagamento<br>\n                  <a href=''https://pagseguro.uol.com.br/v2/checkout/payment.html?code=291337EC3D3D868CC4311F96704C8242'' rel=''nofollow'' target=''_blank''><img src=''http://homolog.arthobby.com.br/image/pagseguro/segundavia.png''></a>\n              ', '2015-02-24 13:49:28');
 
 -- --------------------------------------------------------
 
@@ -1896,7 +1985,15 @@ CREATE TABLE `oc_order_option` (
   `name` varchar(255) NOT NULL,
   `value` text NOT NULL,
   `type` varchar(32) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_order_option`
+--
+
+INSERT INTO `oc_order_option` (`order_option_id`, `order_id`, `order_product_id`, `product_option_id`, `product_option_value_id`, `name`, `value`, `type`) VALUES
+(1, 9, 17, 232, 29, 'Select', 'Red', 'select'),
+(2, 9, 17, 230, 0, 'Date', '2014-08-29', 'date');
 
 -- --------------------------------------------------------
 
@@ -1915,13 +2012,14 @@ CREATE TABLE `oc_order_product` (
   `total` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `tax` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `reward` int(8) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_product`
 --
 
 INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `name`, `model`, `quantity`, `price`, `total`, `tax`, `reward`) VALUES
+(17, 9, 32, 'Lorem ipsum dolor sit amet conse ctetur adipisicing eli', 'Product 5', 1, 218.6900, 218.6900, 0.0000, 0),
 (3, 2, 29, 'Cmmodo consequat. Duis aute irure dolor in reprehenderit', 'Product 2', 1, 279.9900, 279.9900, 50.9983, 0),
 (4, 2, 43, 'Cmmodo consequat. Duis aute irure dolor in reprehenderit', 'Product 16', 1, 499.0000, 499.0000, 89.3250, 600),
 (5, 3, 29, 'Cmmodo consequat. Duis aute irure dolor in reprehenderit', 'Product 2', 1, 279.9900, 279.9900, 50.9983, 0),
@@ -1990,13 +2088,24 @@ CREATE TABLE `oc_order_status` (
 `order_status_id` int(11) NOT NULL,
   `language_id` int(11) NOT NULL,
   `name` varchar(32) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_status`
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
+(27, 4, 'Cancelado'),
+(26, 4, 'Pagamento em Processos'),
+(25, 4, 'Confirmado'),
+(24, 4, 'Cancelada'),
+(23, 4, 'Devolvida'),
+(22, 4, 'Disputa'),
+(21, 4, 'Disponível'),
+(20, 4, 'Paga'),
+(19, 4, 'Em análise'),
+(18, 4, 'Aguardando pagamento'),
+(17, 4, 'Aguardando retorno'),
 (2, 4, 'Processing'),
 (3, 4, 'Shipped'),
 (7, 4, 'Canceled'),
@@ -2026,13 +2135,16 @@ CREATE TABLE `oc_order_total` (
   `text` varchar(255) NOT NULL,
   `value` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `sort_order` int(3) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_total`
 --
 
 INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `text`, `value`, `sort_order`) VALUES
+(43, 9, 'total', 'Total', 'R$ 223,69', 223.6900, 9),
+(42, 9, 'shipping', 'Taxa fixa de frete', 'R$ 5,00', 5.0000, 3),
+(41, 9, 'sub_total', 'Sub-Total', 'R$ 218,69', 218.6900, 1),
 (6, 2, 'sub_total', 'Sub-Total', '$778.99', 778.9900, 1),
 (7, 2, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
 (8, 2, 'tax', 'Eco Tax (-2.00)', '$6.00', 6.0000, 5),
@@ -2127,33 +2239,29 @@ CREATE TABLE `oc_product` (
   `status` tinyint(1) NOT NULL DEFAULT '0',
   `date_added` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `viewed` int(5) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+  `viewed` int(5) NOT NULL DEFAULT '0',
+  `mercaId` varchar(200) DEFAULT NULL,
+  `mercaCurrency` varchar(50) DEFAULT NULL,
+  `mercaBuyMode` varchar(50) DEFAULT NULL,
+  `mercaListType` varchar(50) DEFAULT NULL,
+  `mercaCondition` varchar(50) DEFAULT NULL,
+  `mercaTree` varchar(240) DEFAULT NULL,
+  `mercaWarranty` varchar(240) DEFAULT NULL,
+  `mercaVideoId` varchar(100) DEFAULT NULL,
+  `mercaShipping` text
+) ENGINE=MyISAM AUTO_INCREMENT=56 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_product`
 --
 
-INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `date_added`, `date_modified`, `viewed`) VALUES
-(28, 'Product 1', '', '', '', '', '', '', '', 938, 7, 'data/Tuberculin-Syringes1.png', 11, 1, 100.0000, 200, 9, '2009-02-03', 146.40000000, 2, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 16:06:50', '2014-11-18 11:50:28', 0),
-(29, 'Product 2', '', '', '', '', '', '', '', 995, 6, 'data/ECG-3306G-1.png', 6, 1, 218.6900, 0, 9, '2009-02-03', 133.00000000, 2, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 16:42:17', '2014-11-18 11:30:39', 0),
-(30, 'Product 3', '', '', '', '', '', '', '', 699, 6, 'data/PRIMEDIC-DefiMonitor1.png', 9, 1, 100.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 16:59:00', '2014-11-18 16:15:59', 0),
-(31, 'Product 4', '', '', '', '', '', '', '', 999, 6, 'data/Aluminum-Bath-Bench1.png', 5, 1, 80.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 17:00:10', '2014-11-18 11:40:57', 0),
-(32, 'Product 5', '', '', '', '', '', '', '', 997, 6, 'data/Edan-Pulse1.png', 5, 1, 218.6900, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 17:07:26', '2014-11-18 12:19:10', 0),
-(33, 'Product 6', '', '', '', '', '', '', '', 984, 6, 'data/Folding1.png', 11, 1, 218.6900, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 17:08:31', '2014-11-18 11:32:57', 0),
-(34, 'Product 7', '', '', '', '', '', '', '', 995, 6, 'data/Blood-Pressure-TS1-1.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 18:07:54', '2014-11-18 11:42:31', 0),
-(35, 'Product 8', '', '', '', '', '', '', '', 1000, 5, 'data/Philips-HeartStart1.png', 12, 0, 218.6900, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 18:08:31', '2014-11-18 11:34:17', 0),
-(36, 'Product 9', '', '', '', '', '', '', '', 979, 6, 'data/Insulin-Syringe1.png', 11, 0, 218.6900, 100, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 18:09:19', '2014-11-18 11:31:55', 0),
-(40, 'product 11', '', '', '', '', '', '', '', 967, 5, 'data/Blood-Pressure1.png', 8, 1, 101.0000, 0, 9, '2009-02-03', 10.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 21:07:12', '2014-11-18 11:43:27', 0),
-(41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'data/HeartStart-OnSite1.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 21:07:26', '2014-11-18 16:12:44', 0),
-(42, 'Product 15', '', '', '', '', '', '', '', 986, 5, 'data/Steel-Drop1.png', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, '2009-02-03 21:07:37', '2014-11-18 16:13:27', 0),
-(43, 'Product 16', '', '', '', '', '', '', '', 899, 5, 'data/1-cc-Insulin-Syringe1.png', 8, 0, 500.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:07:49', '2014-11-18 11:40:30', 0),
-(44, 'Product 17', '', '', '', '', '', '', '', 999, 5, 'data/Medtronic-Lifepak-Physio1.png', 12, 1, 1000.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:00', '2014-11-18 16:16:49', 0),
-(45, 'Product 18', '', '', '', '', '', '', '', 993, 5, 'data/B3250-Aluminum1.png', 8, 1, 200.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:17', '2014-11-18 11:41:32', 0),
-(46, 'Product 19', '', '', '', '', '', '', '', 995, 5, 'data/Folding-Cane1.png', 10, 1, 218.6900, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-03 21:08:29', '2014-11-18 16:15:23', 0),
-(47, 'Product 21', 'sdd', '4578789', '46498', '49894654', '549564', '4684645', '', 1000, 5, 'data/Medtronic-Lifepak1.png', 7, 1, 100.0000, 400, 9, '2009-02-03', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2014-11-18 11:46:51', 0),
-(48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 994, 5, 'data/iHealth-WIRELESS1.png', 8, 1, 100.0000, 0, 9, '2009-02-08', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, '2009-02-08 17:21:51', '2014-11-18 11:52:59', 0),
-(49, 'Product 5', '', '', '', '', '', '', '', 994, 8, 'data/iHealth-BLOOD1.png', 0, 1, 199.9900, 0, 9, '2011-04-25', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2011-04-26 08:57:34', '2014-11-18 16:14:06', 0);
+INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `date_added`, `date_modified`, `viewed`, `mercaId`, `mercaCurrency`, `mercaBuyMode`, `mercaListType`, `mercaCondition`, `mercaTree`, `mercaWarranty`, `mercaVideoId`, `mercaShipping`) VALUES
+(50, 'carrinho1', '', '', '', '', '', '', '', 1, 5, 'data/arthobby/miniatura1.jpeg', 0, 1, 900.0000, 0, 0, '2015-02-23', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2015-02-24 23:58:21', '2015-02-25 00:01:16', 0, '', '', '', '', '', '', '', '', NULL),
+(51, 'carrinho1', '', '', '', '', '', '', '', 1, 5, 'data/arthobby/miniatura2.jpeg', 0, 1, 1000.0000, 0, 0, '2015-02-23', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2015-02-25 00:00:16', '2015-02-25 00:01:04', 0, '', '', '', '', '', '', '', '', NULL),
+(52, 'carrinho1', '', '', '', '', '', '', '', 1, 5, 'data/arthobby/miniatura3.jpeg', 0, 1, 399.0000, 0, 0, '2015-02-23', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2015-02-25 00:00:21', '2015-02-25 00:02:03', 0, '', '', '', '', '', '', '', '', NULL),
+(53, 'carrinho1', '', '', '', '', '', '', '', 1, 5, 'data/arthobby/miniatura4.jpeg', 0, 1, 999.0000, 0, 0, '2015-02-23', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2015-02-25 00:00:21', '2015-02-25 00:02:45', 0, '', '', '', '', '', '', '', '', NULL),
+(54, 'carrinho1', '', '', '', '', '', '', '', 1, 5, 'data/arthobby/miniatura6.jpg', 0, 1, 777.0000, 0, 0, '2015-02-23', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2015-02-25 00:00:25', '2015-02-25 00:03:47', 0, '', '', '', '', '', '', '', '', NULL),
+(55, 'carrinho1', '', '', '', '', '', '', '', 1, 5, 'data/arthobby/miniatura5.jpeg', 0, 1, 0.0000, 0, 0, '2015-02-23', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, '2015-02-25 00:00:25', '2015-02-25 00:03:19', 0, '', '', '', '', '', '', '', '', NULL);
 
 -- --------------------------------------------------------
 
@@ -2167,17 +2275,6 @@ CREATE TABLE `oc_product_attribute` (
   `language_id` int(11) NOT NULL,
   `text` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_attribute`
---
-
-INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
-(43, 4, 4, '8gb'),
-(47, 4, 4, '16GB'),
-(47, 2, 4, '4'),
-(43, 2, 4, '1'),
-(42, 3, 4, '100mhz');
 
 -- --------------------------------------------------------
 
@@ -2200,25 +2297,12 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `meta_description`, `meta_keyword`, `tag`) VALUES
-(28, 4, 'Magna aliqua tation ullamcorper', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(36, 4, 'Voluptate velit esse cillum dolore eu fugiat nulla', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(35, 4, 'Velit esse cillum dolore eu fugiat nulla', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(43, 4, 'Cmmodo consequat. Duis aute irure dolor in reprehenderit', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', 'lorem, ipsum, dolore'),
-(31, 4, 'Dolor sit amet conse ctetur adipisicing elit', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(33, 4, 'Ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(34, 4, 'Ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(30, 4, 'Lorem ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(40, 4, 'Ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(42, 4, 'Lorem ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\r\n', '', '', ''),
-(47, 4, 'Ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(41, 4, 'Ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(46, 4, 'Set magna ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(48, 4, 'Set magna ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(45, 4, 'Dolor sit amet conse ctetur adipisicing elit', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(29, 4, 'Cmmodo consequat. Duis aute irure dolor in reprehenderit', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(32, 4, 'Lorem ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(44, 4, 'Ipsum dolor sit amet conse ctetur adipisicing eli', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', ''),
-(49, 4, 'Magna aliqua tation ullamcorper', '&lt;p&gt;The goods of our store are universal because they can satisfy all clients with different demands. We have commodities for the &lt;strong&gt;professional doctors&lt;/strong&gt; as well as the ones for the &lt;strong&gt;home medicine&lt;/strong&gt;. All of our products have user-friendly menus and many useful options. Our goods are the real bestsellers and that is why we have numerous devoted clients all over the country.&lt;/p&gt;\r\n\r\n&lt;p&gt;So if you are interested in purchasing our wonderful medical equipment you can address our superb &lt;strong&gt;24/7&lt;/strong&gt; online support system. We are always ready to help you. Remember that our store often provides many different promos and you can get a good discount.&lt;/p&gt;\r\n', '', '', '');
+(50, 4, 'Carrinho BMW 1', '&lt;p&gt;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de &quot;Conteúdo aqui, conteúdo aqui&quot;, fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por ''lorem ipsum'' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).&lt;/p&gt;\r\n', '', '', ''),
+(52, 4, 'Carrinho BMW 3', '&lt;p&gt;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de &quot;Conteúdo aqui, conteúdo aqui&quot;, fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por ''lorem ipsum'' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).&lt;/p&gt;\r\n', '', '', ''),
+(53, 4, 'Carrinho BMW 4', '&lt;p&gt;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de &quot;Conteúdo aqui, conteúdo aqui&quot;, fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por ''lorem ipsum'' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).&lt;/p&gt;\r\n', '', '', ''),
+(54, 4, 'Carrinho BMW 6', '&lt;p&gt;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de &quot;Conteúdo aqui, conteúdo aqui&quot;, fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por ''lorem ipsum'' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).&lt;/p&gt;\r\n', '', '', ''),
+(55, 4, 'Carrinho BMW 5', '&lt;p&gt;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de &quot;Conteúdo aqui, conteúdo aqui&quot;, fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por ''lorem ipsum'' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).&lt;/p&gt;\r\n', '', '', ''),
+(51, 4, 'Carrinho BMW 2', '&lt;p&gt;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de &quot;Conteúdo aqui, conteúdo aqui&quot;, fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por ''lorem ipsum'' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).&lt;/p&gt;\r\n', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -2237,15 +2321,6 @@ CREATE TABLE `oc_product_discount` (
   `date_end` date NOT NULL DEFAULT '0000-00-00'
 ) ENGINE=MyISAM AUTO_INCREMENT=486 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_discount`
---
-
-INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(485, 42, 1, 30, 1, 66.0000, '0000-00-00', '0000-00-00'),
-(484, 42, 1, 20, 1, 77.0000, '0000-00-00', '0000-00-00'),
-(483, 42, 1, 10, 1, 88.0000, '0000-00-00', '0000-00-00');
-
 -- --------------------------------------------------------
 
 --
@@ -2256,16 +2331,6 @@ CREATE TABLE `oc_product_filter` (
   `product_id` int(11) NOT NULL,
   `filter_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_filter`
---
-
-INSERT INTO `oc_product_filter` (`product_id`, `filter_id`) VALUES
-(29, 2),
-(43, 3),
-(44, 1),
-(45, 2);
 
 -- --------------------------------------------------------
 
@@ -2280,55 +2345,6 @@ CREATE TABLE `oc_product_image` (
   `sort_order` int(3) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM AUTO_INCREMENT=3042 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_image`
---
-
-INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(3040, 44, 'data/Medtronic-Lifepak-Physio2.png', 1),
-(2998, 45, 'data/B3250-Aluminum3.png', 2),
-(2996, 31, 'data/Aluminum-Bath-Bench2.png', 1),
-(2984, 29, 'data/ECG-3306G-2.png', 1),
-(3027, 41, 'data/HeartStart-OnSite3.png', 2),
-(3025, 32, 'data/Edan-Pulse4.png', 3),
-(2986, 36, 'data/Insulin-Syringe2.png', 1),
-(3003, 40, 'data/Blood-Pressure4.png', 3),
-(3000, 34, 'data/Blood-Pressure-TS1-3.png', 2),
-(2995, 31, 'data/Aluminum-Bath-Bench3.png', 2),
-(3037, 46, 'data/Folding-Cane3.png', 2),
-(3033, 49, 'data/iHealth-BLOOD3.png', 2),
-(3039, 30, 'data/PRIMEDIC-DefiMonitor2.png', 1),
-(2993, 43, 'data/1-cc-Insulin-Syringe3.png', 2),
-(2983, 29, 'data/ECG-3306G-3.png', 2),
-(2988, 33, 'data/Folding3.png', 2),
-(2987, 33, 'data/Folding2.png', 1),
-(2990, 35, 'data/Philips-HeartStart2.png', 1),
-(3026, 41, 'data/HeartStart-OnSite2.png', 1),
-(3038, 30, 'data/PRIMEDIC-DefiMonitor3.png', 2),
-(3041, 44, 'data/Medtronic-Lifepak-Physio3.png', 2),
-(2994, 43, 'data/1-cc-Insulin-Syringe2.png', 1),
-(3015, 28, 'data/Tuberculin-Syringes3.png', 2),
-(3030, 42, 'data/Steel-Drop4.png', 3),
-(3002, 40, 'data/Blood-Pressure2.png', 1),
-(3029, 42, 'data/Steel-Drop3.png', 2),
-(3024, 32, 'data/Edan-Pulse2.png', 1),
-(2985, 36, 'data/Insulin-Syringe3.png', 2),
-(2989, 35, 'data/Philips-HeartStart3.png', 2),
-(3036, 46, 'data/Folding-Cane2.png', 1),
-(2997, 45, 'data/B3250-Aluminum2.png', 1),
-(3001, 40, 'data/Blood-Pressure3.png', 2),
-(3008, 47, 'data/Medtronic-Lifepak3.png', 2),
-(3032, 49, 'data/iHealth-BLOOD4.png', 3),
-(3022, 48, 'data/iHealth-WIRELESS4.png', 3),
-(3021, 48, 'data/iHealth-WIRELESS2.png', 1),
-(3020, 48, 'data/iHealth-WIRELESS3.png', 2),
-(2999, 34, 'data/Blood-Pressure-TS1-2.png', 1),
-(3031, 49, 'data/iHealth-BLOOD2.png', 1),
-(3023, 32, 'data/Edan-Pulse3.png', 2),
-(3009, 47, 'data/Medtronic-Lifepak2.png', 1),
-(3028, 42, 'data/Steel-Drop2.png', 1),
-(3016, 28, 'data/Tuberculin-Syringes2.png', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -2342,15 +2358,6 @@ CREATE TABLE `oc_product_option` (
   `option_value` text NOT NULL,
   `required` tinyint(1) NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=233 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_option`
---
-
-INSERT INTO `oc_product_option` (`product_option_id`, `product_id`, `option_id`, `option_value`, `required`) VALUES
-(232, 32, 5, '', 1),
-(227, 48, 5, '', 1),
-(230, 32, 8, '2014-08-29', 1);
 
 -- --------------------------------------------------------
 
@@ -2373,17 +2380,6 @@ CREATE TABLE `oc_product_option_value` (
   `weight` decimal(15,8) NOT NULL,
   `weight_prefix` varchar(1) NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_option_value`
---
-
-INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(28, 232, 32, 5, 40, 100, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
-(17, 227, 48, 5, 41, 80, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
-(19, 227, 48, 5, 40, 80, 1, 0.0000, '+', 12, '+', 0.00000000, '+'),
-(18, 227, 48, 5, 39, 80, 1, 0.0000, '+', 5, '+', 0.00000000, '+'),
-(29, 232, 32, 5, 39, 100, 1, 0.0000, '+', 5, '+', 0.00000000, '+');
 
 -- --------------------------------------------------------
 
@@ -2419,38 +2415,6 @@ CREATE TABLE `oc_product_related` (
   `related_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_related`
---
-
-INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
-(29, 32),
-(29, 42),
-(29, 43),
-(31, 43),
-(32, 29),
-(32, 33),
-(32, 34),
-(32, 36),
-(32, 43),
-(33, 32),
-(34, 32),
-(36, 32),
-(40, 42),
-(41, 42),
-(42, 29),
-(42, 40),
-(42, 41),
-(42, 42),
-(42, 45),
-(43, 29),
-(43, 31),
-(43, 32),
-(43, 43),
-(43, 45),
-(45, 42),
-(45, 43);
-
 -- --------------------------------------------------------
 
 --
@@ -2462,32 +2426,19 @@ CREATE TABLE `oc_product_reward` (
   `product_id` int(11) NOT NULL DEFAULT '0',
   `customer_group_id` int(11) NOT NULL DEFAULT '0',
   `points` int(8) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=776 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=790 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_product_reward`
 --
 
 INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
-(770, 42, 1, 100),
-(762, 47, 1, 300),
-(765, 28, 1, 400),
-(755, 43, 1, 600),
-(750, 29, 1, 0),
-(767, 48, 1, 0),
-(759, 40, 1, 0),
-(774, 30, 1, 200),
-(775, 44, 1, 700),
-(757, 45, 1, 800),
-(756, 31, 1, 0),
-(753, 35, 1, 0),
-(752, 33, 1, 0),
-(773, 46, 1, 0),
-(769, 41, 1, 0),
-(751, 36, 1, 0),
-(758, 34, 1, 0),
-(768, 32, 1, 0),
-(771, 49, 1, 1000);
+(788, 55, 1, 0),
+(786, 52, 1, 0),
+(783, 51, 1, 0),
+(787, 53, 1, 0),
+(784, 50, 1, 0),
+(789, 54, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -2505,21 +2456,6 @@ CREATE TABLE `oc_product_special` (
   `date_end` date NOT NULL DEFAULT '0000-00-00'
 ) ENGINE=MyISAM AUTO_INCREMENT=545 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_special`
---
-
-INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(539, 42, 1, 1, 90.0000, '0000-00-00', '0000-00-00'),
-(544, 30, 1, 2, 90.0000, '0000-00-00', '0000-00-00'),
-(543, 30, 1, 1, 80.0000, '0000-00-00', '0000-00-00'),
-(531, 45, 1, 0, 199.0000, '0000-00-00', '0000-00-00'),
-(538, 41, 1, 0, 99.0000, '0000-00-00', '0000-00-00'),
-(532, 40, 1, 0, 99.0000, '0000-00-00', '0000-00-00'),
-(540, 49, 1, 0, 190.0000, '0000-00-00', '0000-00-00'),
-(529, 43, 1, 0, 499.0000, '0000-00-00', '0000-00-00'),
-(530, 31, 1, 0, 73.0000, '0000-00-00', '0000-00-00');
-
 -- --------------------------------------------------------
 
 --
@@ -2530,97 +2466,6 @@ CREATE TABLE `oc_product_to_category` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_to_category`
---
-
-INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
-(28, 20),
-(28, 24),
-(28, 25),
-(28, 29),
-(28, 30),
-(28, 57),
-(29, 20),
-(29, 24),
-(29, 29),
-(29, 30),
-(29, 36),
-(29, 57),
-(30, 20),
-(30, 31),
-(30, 70),
-(30, 71),
-(30, 72),
-(30, 73),
-(31, 17),
-(33, 17),
-(33, 20),
-(33, 28),
-(33, 29),
-(33, 35),
-(35, 20),
-(36, 25),
-(36, 29),
-(36, 35),
-(36, 57),
-(40, 20),
-(40, 24),
-(41, 31),
-(41, 70),
-(41, 71),
-(41, 72),
-(41, 73),
-(42, 20),
-(42, 28),
-(42, 31),
-(42, 59),
-(42, 70),
-(42, 71),
-(42, 72),
-(42, 73),
-(43, 17),
-(43, 20),
-(43, 30),
-(43, 31),
-(43, 35),
-(43, 73),
-(44, 17),
-(44, 20),
-(44, 28),
-(44, 31),
-(44, 35),
-(44, 36),
-(44, 57),
-(44, 71),
-(44, 73),
-(45, 17),
-(45, 20),
-(45, 25),
-(45, 28),
-(45, 29),
-(46, 20),
-(46, 31),
-(46, 70),
-(46, 71),
-(46, 72),
-(46, 73),
-(47, 20),
-(47, 59),
-(48, 20),
-(48, 28),
-(48, 29),
-(48, 31),
-(48, 35),
-(48, 36),
-(49, 31),
-(49, 57),
-(49, 59),
-(49, 70),
-(49, 71),
-(49, 72),
-(49, 73);
 
 -- --------------------------------------------------------
 
@@ -2661,25 +2506,12 @@ CREATE TABLE `oc_product_to_store` (
 --
 
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
-(28, 0),
-(29, 0),
-(30, 0),
-(31, 0),
-(32, 0),
-(33, 0),
-(34, 0),
-(35, 0),
-(36, 0),
-(40, 0),
-(41, 0),
-(42, 0),
-(43, 0),
-(44, 0),
-(45, 0),
-(46, 0),
-(47, 0),
-(48, 0),
-(49, 0);
+(50, 0),
+(51, 0),
+(52, 0),
+(53, 0),
+(54, 0),
+(55, 0);
 
 -- --------------------------------------------------------
 
@@ -2840,22 +2672,6 @@ CREATE TABLE `oc_review` (
   `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_review`
---
-
-INSERT INTO `oc_review` (`review_id`, `product_id`, `customer_id`, `author`, `text`, `rating`, `status`, `date_added`, `date_modified`) VALUES
-(1, 32, 0, 'Jacob', 'Lorem ipsum dolor sit amet conse ctetur adipisicing eli', 3, 1, '2014-08-15 14:44:16', '0000-00-00 00:00:00'),
-(2, 29, 0, 'Michael', 'Cmmodo consequat. Duis aute irure dolor in reprehenderit', 3, 1, '2014-08-15 14:44:46', '0000-00-00 00:00:00'),
-(3, 36, 0, 'Joshua', 'Voluptate velit esse cillum dolore eu fugiat nulla', 3, 1, '2014-08-15 14:44:22', '0000-00-00 00:00:00'),
-(4, 33, 0, 'Emily', 'Voluptate velit esse cillum dolore eu fugiat nulla', 3, 1, '2014-08-15 14:44:38', '0000-00-00 00:00:00'),
-(5, 35, 0, 'Anna', 'Cmmodo consequat. Duis aute irure dolor in reprehenderit', 3, 1, '2014-08-15 14:44:31', '0000-00-00 00:00:00'),
-(6, 43, 2, 'Anna', 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit', 4, 1, '2014-08-15 17:57:58', '0000-00-00 00:00:00'),
-(7, 46, 2, 'Anna', 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit', 3, 1, '2014-08-15 17:58:16', '0000-00-00 00:00:00'),
-(8, 43, 2, 'Anna', 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit', 5, 1, '2014-08-15 17:58:08', '0000-00-00 00:00:00'),
-(9, 49, 2, 'Anna', 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit', 5, 1, '2014-08-15 17:59:12', '0000-00-00 00:00:00'),
-(10, 47, 2, 'Anna', 'Lorem ipsum dolor sit amet conse ctetur adipisicing elit', 2, 1, '2014-08-15 18:00:46', '0000-00-00 00:00:00');
-
 -- --------------------------------------------------------
 
 --
@@ -2869,7 +2685,7 @@ CREATE TABLE `oc_setting` (
   `key` varchar(64) NOT NULL,
   `value` text NOT NULL,
   `serialized` tinyint(1) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=5554 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5868 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_setting`
@@ -2883,7 +2699,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (5, 0, 'total', 'total_sort_order', '9', 0),
 (6, 0, 'total', 'total_status', '1', 0),
 (7, 0, 'tax', 'tax_sort_order', '5', 0),
-(8, 0, 'free_checkout', 'free_checkout_sort_order', '1', 0),
+(5648, 0, 'correios', 'correios_aviso_recebimento', 'n', 0),
 (9, 0, 'cod', 'cod_sort_order', '5', 0),
 (10, 0, 'cod', 'cod_total', '0.01', 0),
 (11, 0, 'cod', 'cod_order_status_id', '1', 0),
@@ -2894,11 +2710,9 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (4814, 0, 'newcarousel', 'newcarousel_module', 'a:1:{i:0;a:7:{s:9:"banner_id";s:2:"15";s:5:"width";s:3:"870";s:6:"height";s:3:"350";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (27, 0, 'coupon', 'coupon_sort_order', '4', 0),
 (28, 0, 'coupon', 'coupon_status', '1', 0),
-(3047, 0, 'flat', 'flat_sort_order', '1', 0),
-(3046, 0, 'flat', 'flat_status', '1', 0),
-(3045, 0, 'flat', 'flat_geo_zone_id', '0', 0),
-(3044, 0, 'flat', 'flat_tax_class_id', '9', 0),
-(3043, 0, 'flat', 'flat_cost', '5.00', 0),
+(5643, 0, 'correios', 'correios_40215', '1', 0),
+(5642, 0, 'correios', 'correios_40010', '1', 0),
+(5641, 0, 'correios', 'correios_postcode', '06709-255', 0),
 (42, 0, 'credit', 'credit_sort_order', '7', 0),
 (43, 0, 'credit', 'credit_status', '1', 0),
 (53, 0, 'reward', 'reward_sort_order', '2', 0),
@@ -2908,127 +2722,202 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (4810, 0, 'compare', 'compare_module', 'a:2:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:1;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}}', 1),
 (94, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (95, 0, 'voucher', 'voucher_status', '1', 0),
-(103, 0, 'free_checkout', 'free_checkout_status', '1', 0),
-(104, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
+(5647, 0, 'correios', 'correios_mao_propria', 'n', 0),
+(5646, 0, 'correios', 'correios_contrato_senha', '', 0),
 (4805, 0, 'affiliate', 'affiliate_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (5238, 0, 'filter', 'filter_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (4816, 0, 'information', 'information_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(5550, 0, 'config', 'config_error_display', '1', 0),
-(5549, 0, 'config', 'config_compression', '0', 0),
-(5548, 0, 'config', 'config_encryption', '4e017f65f3a21ba60454319c9fa45454', 0),
-(5547, 0, 'config', 'config_password', '1', 0),
-(5546, 0, 'config', 'config_maintenance', '0', 0),
-(5543, 0, 'config', 'config_seo_url', '0', 0),
-(5544, 0, 'config', 'config_file_extension_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
-(5545, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/jpeg\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/tiff\r\nimage/svg+xml\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/postscript\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
+(5866, 0, 'config', 'config_error_filename', 'error.txt', 0),
+(5865, 0, 'config', 'config_error_log', '1', 0),
+(5864, 0, 'config', 'config_error_display', '1', 0),
+(5852, 0, 'config', 'config_fraud_score', '', 0),
+(5853, 0, 'config', 'config_fraud_status_id', '7', 0),
+(5854, 0, 'config', 'config_secure', '0', 0),
+(5855, 0, 'config', 'config_shared', '0', 0),
+(5856, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai''hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwget\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(5857, 0, 'config', 'config_seo_url', '0', 0),
+(5858, 0, 'config', 'config_file_extension_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
+(5859, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/jpeg\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/tiff\r\nimage/svg+xml\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/postscript\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
+(5860, 0, 'config', 'config_maintenance', '0', 0),
+(5861, 0, 'config', 'config_password', '1', 0),
+(5862, 0, 'config', 'config_encryption', '4e017f65f3a21ba60454319c9fa45454', 0),
+(5863, 0, 'config', 'config_compression', '0', 0),
 (4807, 0, 'banner', 'banner_module', 'a:2:{i:0;a:7:{s:9:"banner_id";s:2:"16";s:5:"width";s:3:"263";s:6:"height";s:3:"135";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:1;a:7:{s:9:"banner_id";s:2:"20";s:5:"width";s:3:"270";s:6:"height";s:3:"186";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
-(5541, 0, 'config', 'config_shared', '0', 0),
-(5542, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai''hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwget\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(5540, 0, 'config', 'config_secure', '0', 0),
-(5539, 0, 'config', 'config_fraud_status_id', '7', 0),
-(5537, 0, 'config', 'config_fraud_key', '', 0),
+(5851, 0, 'config', 'config_fraud_key', '', 0),
+(5850, 0, 'config', 'config_fraud_detection', '0', 0),
+(5849, 0, 'config', 'config_alert_emails', '', 0),
 (2056, 0, 'newslideshow', 'slideshow_module', 'a:1:{i:0;a:7:{s:9:"banner_id";s:2:"14";s:5:"width";s:4:"1000";s:6:"height";s:3:"400";s:9:"layout_id";s:1:"6";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:0:"";}}', 1),
-(5538, 0, 'config', 'config_fraud_score', '', 0),
-(5536, 0, 'config', 'config_fraud_detection', '0', 0),
-(5535, 0, 'config', 'config_alert_emails', '', 0),
-(5533, 0, 'config', 'config_alert_mail', '0', 0),
-(5534, 0, 'config', 'config_account_mail', '0', 0),
-(3051, 0, 'free', 'free_sort_order', '2', 0),
-(3050, 0, 'free', 'free_status', '0', 0),
-(3049, 0, 'free', 'free_geo_zone_id', '0', 0),
-(3048, 0, 'free', 'free_total', '', 0),
+(5848, 0, 'config', 'config_account_mail', '0', 0),
+(5847, 0, 'config', 'config_alert_mail', '0', 0),
+(5846, 0, 'config', 'config_smtp_timeout', '5', 0),
+(5844, 0, 'config', 'config_smtp_password', '', 0),
+(5845, 0, 'config', 'config_smtp_port', '25', 0),
+(5645, 0, 'correios', 'correios_contrato_codigo', '', 0),
+(5644, 0, 'correios', 'correios_41106', '1', 0),
 (5132, 0, 'bestseller', 'bestseller_module', 'a:3:{i:0;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:1;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:2;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(5531, 0, 'config', 'config_smtp_port', '25', 0),
+(5843, 0, 'config', 'config_smtp_username', '', 0),
 (5133, 0, 'latest', 'latest_module', 'a:3:{i:0;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:1;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"9";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:2;a:7:{s:5:"limit";s:1:"1";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
-(5025, 0, 'featured', 'product', '', 0),
-(5026, 0, 'featured', 'featured_product', '32,29,36,33,35,46', 0),
-(5027, 0, 'featured', 'featured_module', 'a:1:{i:0;a:7:{s:5:"limit";s:1:"6";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(5532, 0, 'config', 'config_smtp_timeout', '5', 0),
-(5529, 0, 'config', 'config_smtp_username', '', 0),
-(5530, 0, 'config', 'config_smtp_password', '', 0),
-(5527, 0, 'config', 'config_mail_parameter', '', 0),
-(5528, 0, 'config', 'config_smtp_host', '', 0),
-(5526, 0, 'config', 'config_mail_protocol', 'mail', 0),
-(5525, 0, 'config', 'config_ftp_status', '0', 0),
-(5524, 0, 'config', 'config_ftp_root', '', 0),
-(5523, 0, 'config', 'config_ftp_password', '', 0),
-(5522, 0, 'config', 'config_ftp_username', '', 0),
-(5521, 0, 'config', 'config_ftp_port', '21', 0),
-(5520, 0, 'config', 'config_ftp_host', '192.168.9.2', 0),
-(5519, 0, 'config', 'config_image_cart_height', '47', 0),
-(5518, 0, 'config', 'config_image_cart_width', '47', 0),
-(5517, 0, 'config', 'config_image_wishlist_height', '47', 0),
-(5516, 0, 'config', 'config_image_wishlist_width', '47', 0),
-(5515, 0, 'config', 'config_image_compare_height', '90', 0),
-(5514, 0, 'config', 'config_image_compare_width', '90', 0),
-(5513, 0, 'config', 'config_image_related_height', '170', 0),
-(5512, 0, 'config', 'config_image_related_width', '170', 0),
-(5511, 0, 'config', 'config_image_additional_height', '70', 0),
+(5660, 0, 'featured', 'featured_product', '50,51,52,53,55,54', 0),
+(5661, 0, 'featured', 'featured_module', 'a:1:{i:0;a:7:{s:5:"limit";s:1:"6";s:11:"image_width";s:3:"198";s:12:"image_height";s:3:"198";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
+(5842, 0, 'config', 'config_smtp_host', '', 0),
+(5841, 0, 'config', 'config_mail_parameter', '', 0),
+(5840, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(5839, 0, 'config', 'config_ftp_status', '0', 0),
+(5838, 0, 'config', 'config_ftp_root', '', 0),
+(5837, 0, 'config', 'config_ftp_password', '', 0),
+(5836, 0, 'config', 'config_ftp_username', '', 0),
+(5835, 0, 'config', 'config_ftp_port', '21', 0),
+(5834, 0, 'config', 'config_ftp_host', '192.168.9.2', 0),
+(5833, 0, 'config', 'config_image_cart_height', '47', 0),
+(5832, 0, 'config', 'config_image_cart_width', '47', 0),
+(5831, 0, 'config', 'config_image_wishlist_height', '47', 0),
+(5830, 0, 'config', 'config_image_wishlist_width', '47', 0),
+(5827, 0, 'config', 'config_image_related_height', '170', 0),
+(5829, 0, 'config', 'config_image_compare_height', '90', 0),
+(5828, 0, 'config', 'config_image_compare_width', '90', 0),
+(5826, 0, 'config', 'config_image_related_width', '170', 0),
+(5825, 0, 'config', 'config_image_additional_height', '70', 0),
+(5824, 0, 'config', 'config_image_additional_width', '70', 0),
+(5822, 0, 'config', 'config_image_product_width', '198', 0),
 (4803, 0, 'category', 'category_module', 'a:11:{i:0;a:4:{s:9:"layout_id";s:1:"6";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:1;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:2;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:3;a:4:{s:9:"layout_id";s:1:"7";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:4;a:4:{s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:5;a:4:{s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:6;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:7;a:4:{s:9:"layout_id";s:2:"11";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:8;a:4:{s:9:"layout_id";s:1:"5";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:9;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:10;a:4:{s:9:"layout_id";s:1:"9";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (4808, 0, 'manufacturer', 'manufacturer_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
-(5510, 0, 'config', 'config_image_additional_width', '70', 0),
-(5509, 0, 'config', 'config_image_product_height', '198', 0),
-(5508, 0, 'config', 'config_image_product_width', '198', 0),
-(5507, 0, 'config', 'config_image_popup_height', '600', 0),
-(5506, 0, 'config', 'config_image_popup_width', '600', 0),
-(5505, 0, 'config', 'config_image_thumb_height', '270', 0),
-(5504, 0, 'config', 'config_image_thumb_width', '270', 0),
-(5503, 0, 'config', 'config_image_category_height', '190', 0),
-(5502, 0, 'config', 'config_image_category_width', '190', 0),
-(5498, 0, 'config', 'config_return_id', '0', 0),
-(5499, 0, 'config', 'config_return_status_id', '2', 0),
-(5500, 0, 'config', 'config_logo', 'data/logo.png', 0),
-(5501, 0, 'config', 'config_icon', 'data/favicon.png', 0),
-(5497, 0, 'config', 'config_commission', '5', 0),
-(5496, 0, 'config', 'config_affiliate_id', '4', 0),
-(5495, 0, 'config', 'config_stock_status_id', '5', 0),
-(5494, 0, 'config', 'config_stock_checkout', '0', 0),
-(5493, 0, 'config', 'config_stock_warning', '0', 0),
-(5492, 0, 'config', 'config_stock_display', '0', 0),
-(5491, 0, 'config', 'config_complete_status_id', '5', 0),
-(5490, 0, 'config', 'config_order_status_id', '1', 0),
-(5489, 0, 'config', 'config_invoice_prefix', 'ART2015', 0),
-(5488, 0, 'config', 'config_order_edit', '100', 0),
-(5487, 0, 'config', 'config_checkout_id', '5', 0),
-(5486, 0, 'config', 'config_guest_checkout', '0', 0),
-(5485, 0, 'config', 'config_cart_weight', '1', 0),
-(5484, 0, 'config', 'config_account_id', '3', 0),
-(5483, 0, 'config', 'config_customer_price', '0', 0),
-(5482, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
-(5481, 0, 'config', 'config_customer_group_id', '1', 0),
-(5472, 0, 'config', 'config_review_status', '0', 0),
-(5473, 0, 'config', 'config_download', '0', 0),
-(5474, 0, 'config', 'config_voucher_min', '1', 0),
-(5475, 0, 'config', 'config_voucher_max', '10000', 0),
-(5476, 0, 'config', 'config_tax', '1', 0),
-(5477, 0, 'config', 'config_vat', '0', 0),
-(5478, 0, 'config', 'config_tax_default', 'shipping', 0),
-(5479, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(5480, 0, 'config', 'config_customer_online', '0', 0),
-(5468, 0, 'config', 'config_weight_class_id', '1', 0),
-(5469, 0, 'config', 'config_catalog_limit', '6', 0),
-(5470, 0, 'config', 'config_admin_limit', '20', 0),
-(5471, 0, 'config', 'config_product_count', '0', 0),
-(5456, 0, 'config', 'config_fax', '(800)2345-3596', 0),
-(5457, 0, 'config', 'config_title', 'Art Hobby', 0),
-(5458, 0, 'config', 'config_meta_description', 'Art Hobby', 0),
-(5459, 0, 'config', 'config_template', 'theme490', 0),
-(5460, 0, 'config', 'config_layout_id', '4', 0),
-(5461, 0, 'config', 'config_country_id', '30', 0),
-(5462, 0, 'config', 'config_zone_id', '464', 0),
-(5463, 0, 'config', 'config_language', 'pt-br', 0),
-(5464, 0, 'config', 'config_admin_language', 'pt-br', 0),
-(5465, 0, 'config', 'config_currency', 'BRL', 0),
-(5466, 0, 'config', 'config_currency_auto', '1', 0),
-(5467, 0, 'config', 'config_length_class_id', '1', 0),
-(5455, 0, 'config', 'config_telephone', '(800)2345-6789', 0),
-(5454, 0, 'config', 'config_email', 'fernando.mendes@webca.com.br', 0),
-(5453, 0, 'config', 'config_address', '8901 Marmora Road, Glasgow, D04 89GR', 0),
-(5452, 0, 'config', 'config_owner', 'Art Hobby', 0),
-(5451, 0, 'config', 'config_name', 'Art Hobby', 0),
-(5551, 0, 'config', 'config_error_log', '1', 0),
-(5552, 0, 'config', 'config_error_filename', 'error.txt', 0),
-(5553, 0, 'config', 'config_google_analytics', '', 0);
+(5823, 0, 'config', 'config_image_product_height', '198', 0),
+(5820, 0, 'config', 'config_image_popup_width', '600', 0),
+(5821, 0, 'config', 'config_image_popup_height', '600', 0),
+(5819, 0, 'config', 'config_image_thumb_height', '270', 0),
+(5818, 0, 'config', 'config_image_thumb_width', '270', 0),
+(5816, 0, 'config', 'config_image_category_width', '190', 0),
+(5817, 0, 'config', 'config_image_category_height', '190', 0),
+(5815, 0, 'config', 'config_icon', 'data/favicon.png', 0),
+(5814, 0, 'config', 'config_logo', 'data/arthobby/logofooter.png', 0),
+(5813, 0, 'config', 'config_return_status_id', '2', 0),
+(5812, 0, 'config', 'config_return_id', '0', 0),
+(5811, 0, 'config', 'config_commission', '5', 0),
+(5810, 0, 'config', 'config_affiliate_id', '4', 0),
+(5809, 0, 'config', 'config_stock_status_id', '5', 0),
+(5808, 0, 'config', 'config_stock_checkout', '0', 0),
+(5807, 0, 'config', 'config_stock_warning', '0', 0),
+(5806, 0, 'config', 'config_stock_display', '0', 0),
+(5805, 0, 'config', 'config_complete_status_id', '5', 0),
+(5804, 0, 'config', 'config_order_status_id', '1', 0),
+(5803, 0, 'config', 'config_invoice_prefix', 'ART2015', 0),
+(5802, 0, 'config', 'config_order_edit', '100', 0),
+(5801, 0, 'config', 'config_checkout_id', '5', 0),
+(5800, 0, 'config', 'config_guest_checkout', '0', 0),
+(5799, 0, 'config', 'config_cart_weight', '1', 0),
+(5798, 0, 'config', 'config_account_id', '3', 0),
+(5796, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
+(5797, 0, 'config', 'config_customer_price', '0', 0),
+(5795, 0, 'config', 'config_customer_group_id', '1', 0),
+(5794, 0, 'config', 'config_customer_online', '0', 0),
+(5793, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(5792, 0, 'config', 'config_tax_default', 'shipping', 0),
+(5791, 0, 'config', 'config_vat', '0', 0),
+(5790, 0, 'config', 'config_tax', '1', 0),
+(5789, 0, 'config', 'config_voucher_max', '10000', 0),
+(5788, 0, 'config', 'config_voucher_min', '1', 0),
+(5787, 0, 'config', 'config_download', '0', 0),
+(5786, 0, 'config', 'config_review_status', '0', 0),
+(5785, 0, 'config', 'config_product_count', '0', 0),
+(5784, 0, 'config', 'config_admin_limit', '20', 0),
+(5783, 0, 'config', 'config_catalog_limit', '6', 0),
+(5782, 0, 'config', 'config_weight_class_id', '1', 0),
+(5781, 0, 'config', 'config_length_class_id', '1', 0),
+(5780, 0, 'config', 'config_currency_auto', '1', 0),
+(5779, 0, 'config', 'config_currency', 'BRL', 0),
+(5778, 0, 'config', 'config_admin_language', 'pt-br', 0),
+(5777, 0, 'config', 'config_language', 'pt-br', 0),
+(5776, 0, 'config', 'config_zone_id', '464', 0),
+(5775, 0, 'config', 'config_country_id', '30', 0),
+(5774, 0, 'config', 'config_layout_id', '4', 0),
+(5772, 0, 'config', 'config_meta_description', 'Art Hobby', 0),
+(5773, 0, 'config', 'config_template', 'theme490', 0),
+(5771, 0, 'config', 'config_title', 'Art Hobby', 0),
+(5770, 0, 'config', 'config_fax', '', 0),
+(5769, 0, 'config', 'config_telephone', '11 5432-1012', 0),
+(5767, 0, 'config', 'config_address', '8901 Marmora Road, Glasgow, D04 89GR', 0),
+(5768, 0, 'config', 'config_email', 'fernando.mendes@webca.com.br', 0),
+(5766, 0, 'config', 'config_owner', 'Art Hobby', 0),
+(5765, 0, 'config', 'config_name', 'Art Hobby', 0),
+(5582, 0, 'pagseguro', 'pagseguro_order_devolvida', '23', 0),
+(5581, 0, 'pagseguro', 'pagseguro_order_disputa', '22', 0),
+(5580, 0, 'pagseguro', 'pagseguro_order_disponivel', '21', 0),
+(5579, 0, 'pagseguro', 'pagseguro_order_paga', '20', 0),
+(5578, 0, 'pagseguro', 'pagseguro_order_analise', '19', 0),
+(5577, 0, 'pagseguro', 'pagseguro_order_aguardando_pagamento', '18', 0),
+(5576, 0, 'pagseguro', 'pagseguro_order_aguardando_retorno', '17', 0),
+(5575, 0, 'pagseguro', 'pagseguro_tipo_frete', '0', 0),
+(5574, 0, 'pagseguro', 'pagseguro_posfixo', '', 0),
+(5573, 0, 'pagseguro', 'pagseguro_total', '', 0),
+(5572, 0, 'pagseguro', 'pagseguro_email', 'atendimento@arthobby.com.br', 0),
+(5571, 0, 'pagseguro', 'pagseguro_token', '8C2AAD9D764E487E9426452B2B2DA2BC', 0),
+(5583, 0, 'pagseguro', 'pagseguro_order_cancelada', '24', 0),
+(5584, 0, 'pagseguro', 'pagseguro_update_status_alert', '1', 0),
+(5585, 0, 'pagseguro', 'pagseguro_geo_zone_id', '0', 0),
+(5586, 0, 'pagseguro', 'pagseguro_status', '1', 0),
+(5587, 0, 'pagseguro', 'pagseguro_sort_order', '', 0),
+(5588, 0, 'mercadolivre', 'mercadolivre_app_id', '', 0),
+(5589, 0, 'mercadolivre', 'mercadolivre_app_secret', '', 0),
+(5590, 0, 'mercadolivre', 'mercadolivre_debug', '0', 0),
+(5591, 0, 'mercadolivre', 'mercadolivre_status', '0', 0),
+(5592, 0, 'mercadolivre', 'mercadolivre_category_tree', '', 0),
+(5593, 0, 'mercadolivre', 'mercadolivre_mercaId', '', 0),
+(5594, 0, 'mercadolivre', 'mercadolivre_mercaCurrency', 'BRL', 0),
+(5595, 0, 'mercadolivre', 'mercadolivre_mercaBuyMode', 'buy_it_now', 0),
+(5596, 0, 'mercadolivre', 'mercadolivre_mercaCondition', 'new', 0),
+(5597, 0, 'mercadolivre', 'mercadolivre_mercaPrice', '', 0),
+(5598, 0, 'mercadolivre', 'mercadolivre_mercaWarranty', '', 0),
+(5599, 0, 'mercadolivre', 'mercadolivre_image_in_desc', '0', 0),
+(5600, 0, 'mercadolivre', 'mercadolivre_new_customer', '1', 0),
+(5601, 0, 'mercadolivre', 'mercadolivre_shipping', 'flat', 0),
+(5602, 0, 'mercadolivre', 'mercadolivre_payment', 'cod', 0),
+(5603, 0, 'mercadolivre', 'mercadolivre_feedback', '0', 0),
+(5604, 0, 'mercadolivre', 'mercadolivre_feedback_order', 'confirmed', 0),
+(5605, 0, 'mercadolivre', 'mercadolivre_feedback_rating', 'positive', 0),
+(5606, 0, 'mercadolivre', 'mercadolivre_feedback_message', '', 0),
+(5607, 0, 'mercadolivre', 'mercadolivre_shipping_name1', '', 0),
+(5608, 0, 'mercadolivre', 'mercadolivre_shipping_cost1', '', 0),
+(5609, 0, 'mercadolivre', 'mercadolivre_shipping_name2', '', 0),
+(5610, 0, 'mercadolivre', 'mercadolivre_shipping_cost2', '', 0),
+(5611, 0, 'mercadolivre', 'mercadolivre_shipping_name3', '', 0),
+(5612, 0, 'mercadolivre', 'mercadolivre_shipping_cost3', '', 0),
+(5613, 0, 'mercadolivre', 'mercadolivre_shipping_name4', '', 0),
+(5614, 0, 'mercadolivre', 'mercadolivre_shipping_cost4', '', 0),
+(5615, 0, 'mercadolivre', 'mercadolivre_shipping_name5', '', 0),
+(5616, 0, 'mercadolivre', 'mercadolivre_shipping_cost5', '', 0),
+(5617, 0, 'mercadolivre', 'mercadolivre_template', '', 0),
+(5618, 0, 'mercadolivre', 'mercadolivre_access_token', '', 0),
+(5619, 0, 'mercadolivre', 'mercadolivre_refresh_token', '', 0),
+(5620, 0, 'mercadolivre', 'mercadolivre_token_expire', '', 0),
+(5621, 0, 'bancosantander', 'bancosantander_nome', 'Boleto', 0),
+(5622, 0, 'bancosantander', 'bancosantander_cedente', '', 0),
+(5623, 0, 'bancosantander', 'bancosantander_cpfcnpj', '', 0),
+(5624, 0, 'bancosantander', 'bancosantander_endereco', '', 0),
+(5625, 0, 'bancosantander', 'bancosantander_cliente', '', 0),
+(5626, 0, 'bancosantander', 'bancosantander_venda', '', 0),
+(5627, 0, 'bancosantander', 'bancosantander_taxa', '', 0),
+(5628, 0, 'bancosantander', 'bancosantander_dias', '', 0),
+(5629, 0, 'bancosantander', 'bancosantander_demo1', '', 0),
+(5630, 0, 'bancosantander', 'bancosantander_demo2', '', 0),
+(5631, 0, 'bancosantander', 'bancosantander_demo3', '', 0),
+(5632, 0, 'bancosantander', 'bancosantander_ins1', '', 0),
+(5633, 0, 'bancosantander', 'bancosantander_ins2', '', 0),
+(5634, 0, 'bancosantander', 'bancosantander_ins3', '', 0),
+(5635, 0, 'bancosantander', 'bancosantander_ins4', '', 0),
+(5636, 0, 'bancosantander', 'bancosantander_total', '', 0),
+(5637, 0, 'bancosantander', 'bancosantander_order_status_id', '18', 0),
+(5638, 0, 'bancosantander', 'bancosantander_geo_zone_id', '0', 0),
+(5639, 0, 'bancosantander', 'bancosantander_status', '1', 0),
+(5640, 0, 'bancosantander', 'bancosantander_sort_order', '', 0),
+(5649, 0, 'correios', 'correios_declarar_valor', 'n', 0),
+(5650, 0, 'correios', 'correios_adicional', '15', 0),
+(5651, 0, 'correios', 'correios_prazo_adicional', '', 0),
+(5652, 0, 'correios', 'correios_tax_class_id', '0', 0),
+(5653, 0, 'correios', 'correios_geo_zone_id', '0', 0),
+(5654, 0, 'correios', 'correios_status', '1', 0),
+(5655, 0, 'correios', 'correios_sort_order', '', 0),
+(5659, 0, 'featured', 'product', 'carrin', 0),
+(5867, 0, 'config', 'config_google_analytics', '', 0);
 
 -- --------------------------------------------------------
 
@@ -3164,22 +3053,24 @@ CREATE TABLE `oc_url_alias` (
 `url_alias_id` int(11) NOT NULL,
   `query` varchar(255) NOT NULL,
   `keyword` varchar(255) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=799 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=810 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_url_alias`
 --
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
-(795, 'product_id=48', 'Diagnostics'),
-(793, 'category_id=20', 'Home health'),
-(503, 'category_id=26', 'Patient care'),
-(505, 'category_id=27', 'Medical apparel'),
+(800, 'category_id=75', 'carros124'),
+(808, 'category_id=76', 'caminhoes132'),
 (798, 'manufacturer_id=8', 'First Aid'),
-(781, 'information_id=4', 'Mobility'),
-(797, 'product_id=42', 'Bracers'),
+(809, 'information_id=4', 'Mobility'),
 (767, 'category_id=34', 'Bariatric'),
-(796, 'category_id=36', 'Medical');
+(799, 'category_id=74', 'miniaturas'),
+(802, 'category_id=77', 'plastimodelismo'),
+(804, 'category_id=78', 'aviacao172'),
+(805, 'category_id=79', 'aviacao1144'),
+(806, 'mercadolivre=mercadolivre', 'mercadolivre_auth'),
+(807, 'mercadolivre=mercadolivre/callback', 'mercadolivre_callback');
 
 -- --------------------------------------------------------
 
@@ -3226,7 +3117,7 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Top Administrator', 'a:2:{s:6:"access";a:152:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:15:"module/category";i:151;s:19:"module/manufacturer";}s:6:"modify";a:152:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:15:"module/category";i:151;s:19:"module/manufacturer";}}'),
+(1, 'Top Administrator', 'a:2:{s:6:"access";a:157:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:15:"module/category";i:151;s:19:"module/manufacturer";i:152;s:17:"payment/pagseguro";i:153;s:19:"module/mercadolivre";i:154;s:20:"payment/mercadopago2";i:155;s:22:"payment/bancosantander";i:156;s:17:"shipping/correios";}s:6:"modify";a:157:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:15:"catalog/profile";i:10;s:14:"catalog/review";i:11;s:18:"common/filemanager";i:12;s:13:"design/banner";i:13;s:19:"design/custom_field";i:14;s:13:"design/layout";i:15;s:14:"extension/feed";i:16;s:17:"extension/manager";i:17;s:16:"extension/module";i:18;s:17:"extension/openbay";i:19;s:17:"extension/payment";i:20;s:18:"extension/shipping";i:21;s:15:"extension/total";i:22;s:16:"feed/google_base";i:23;s:19:"feed/google_sitemap";i:24;s:20:"localisation/country";i:25;s:21:"localisation/currency";i:26;s:21:"localisation/geo_zone";i:27;s:21:"localisation/language";i:28;s:25:"localisation/length_class";i:29;s:25:"localisation/order_status";i:30;s:26:"localisation/return_action";i:31;s:26:"localisation/return_reason";i:32;s:26:"localisation/return_status";i:33;s:25:"localisation/stock_status";i:34;s:22:"localisation/tax_class";i:35;s:21:"localisation/tax_rate";i:36;s:25:"localisation/weight_class";i:37;s:17:"localisation/zone";i:38;s:14:"module/account";i:39;s:16:"module/affiliate";i:40;s:29:"module/amazon_checkout_layout";i:41;s:13:"module/banner";i:42;s:17:"module/bestseller";i:43;s:15:"module/carousel";i:44;s:15:"module/category";i:45;s:18:"module/ebaydisplay";i:46;s:15:"module/featured";i:47;s:13:"module/filter";i:48;s:18:"module/google_talk";i:49;s:18:"module/information";i:50;s:13:"module/latest";i:51;s:17:"module/openbaypro";i:52;s:16:"module/pp_layout";i:53;s:16:"module/slideshow";i:54;s:14:"module/special";i:55;s:12:"module/store";i:56;s:14:"module/welcome";i:57;s:14:"openbay/amazon";i:58;s:22:"openbay/amazon_listing";i:59;s:22:"openbay/amazon_product";i:60;s:16:"openbay/amazonus";i:61;s:24:"openbay/amazonus_listing";i:62;s:24:"openbay/amazonus_product";i:63;s:20:"openbay/ebay_profile";i:64;s:21:"openbay/ebay_template";i:65;s:15:"openbay/openbay";i:66;s:23:"payment/amazon_checkout";i:67;s:24:"payment/authorizenet_aim";i:68;s:21:"payment/bank_transfer";i:69;s:14:"payment/cheque";i:70;s:11:"payment/cod";i:71;s:21:"payment/free_checkout";i:72;s:22:"payment/klarna_account";i:73;s:22:"payment/klarna_invoice";i:74;s:14:"payment/liqpay";i:75;s:20:"payment/moneybookers";i:76;s:14:"payment/nochex";i:77;s:15:"payment/paymate";i:78;s:16:"payment/paypoint";i:79;s:13:"payment/payza";i:80;s:26:"payment/perpetual_payments";i:81;s:18:"payment/pp_express";i:82;s:25:"payment/pp_payflow_iframe";i:83;s:14:"payment/pp_pro";i:84;s:21:"payment/pp_pro_iframe";i:85;s:17:"payment/pp_pro_pf";i:86;s:17:"payment/pp_pro_uk";i:87;s:19:"payment/pp_standard";i:88;s:15:"payment/sagepay";i:89;s:22:"payment/sagepay_direct";i:90;s:18:"payment/sagepay_us";i:91;s:19:"payment/twocheckout";i:92;s:28:"payment/web_payment_software";i:93;s:16:"payment/worldpay";i:94;s:27:"report/affiliate_commission";i:95;s:22:"report/customer_credit";i:96;s:22:"report/customer_online";i:97;s:21:"report/customer_order";i:98;s:22:"report/customer_reward";i:99;s:24:"report/product_purchased";i:100;s:21:"report/product_viewed";i:101;s:18:"report/sale_coupon";i:102;s:17:"report/sale_order";i:103;s:18:"report/sale_return";i:104;s:20:"report/sale_shipping";i:105;s:15:"report/sale_tax";i:106;s:14:"sale/affiliate";i:107;s:12:"sale/contact";i:108;s:11:"sale/coupon";i:109;s:13:"sale/customer";i:110;s:20:"sale/customer_ban_ip";i:111;s:19:"sale/customer_group";i:112;s:10:"sale/order";i:113;s:14:"sale/recurring";i:114;s:11:"sale/return";i:115;s:12:"sale/voucher";i:116;s:18:"sale/voucher_theme";i:117;s:15:"setting/setting";i:118;s:13:"setting/store";i:119;s:16:"shipping/auspost";i:120;s:17:"shipping/citylink";i:121;s:14:"shipping/fedex";i:122;s:13:"shipping/flat";i:123;s:13:"shipping/free";i:124;s:13:"shipping/item";i:125;s:23:"shipping/parcelforce_48";i:126;s:15:"shipping/pickup";i:127;s:19:"shipping/royal_mail";i:128;s:12:"shipping/ups";i:129;s:13:"shipping/usps";i:130;s:15:"shipping/weight";i:131;s:11:"tool/backup";i:132;s:14:"tool/error_log";i:133;s:12:"total/coupon";i:134;s:12:"total/credit";i:135;s:14:"total/handling";i:136;s:16:"total/klarna_fee";i:137;s:19:"total/low_order_fee";i:138;s:12:"total/reward";i:139;s:14:"total/shipping";i:140;s:15:"total/sub_total";i:141;s:9:"total/tax";i:142;s:11:"total/total";i:143;s:13:"total/voucher";i:144;s:9:"user/user";i:145;s:20:"user/user_permission";i:146;s:14:"module/welcome";i:147;s:18:"module/newcarousel";i:148;s:14:"module/compare";i:149;s:20:"module/vqmod_manager";i:150;s:15:"module/category";i:151;s:19:"module/manufacturer";i:152;s:17:"payment/pagseguro";i:153;s:19:"module/mercadolivre";i:154;s:20:"payment/mercadopago2";i:155;s:22:"payment/bancosantander";i:156;s:17:"shipping/correios";}}'),
 (10, 'Demonstration', '');
 
 -- --------------------------------------------------------
@@ -7720,6 +7611,54 @@ ALTER TABLE `oc_manufacturer_to_store`
  ADD PRIMARY KEY (`manufacturer_id`,`store_id`);
 
 --
+-- Indexes for table `oc_mercadolivre_api_call`
+--
+ALTER TABLE `oc_mercadolivre_api_call`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oc_mercadolivre_attribute`
+--
+ALTER TABLE `oc_mercadolivre_attribute`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oc_mercadolivre_attr_combination`
+--
+ALTER TABLE `oc_mercadolivre_attr_combination`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oc_mercadolivre_category`
+--
+ALTER TABLE `oc_mercadolivre_category`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oc_mercadolivre_listing_type`
+--
+ALTER TABLE `oc_mercadolivre_listing_type`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oc_mercadolivre_order`
+--
+ALTER TABLE `oc_mercadolivre_order`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oc_mercadolivre_product`
+--
+ALTER TABLE `oc_mercadolivre_product`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oc_mercadolivre_status`
+--
+ALTER TABLE `oc_mercadolivre_status`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `oc_option`
 --
 ALTER TABLE `oc_option`
@@ -8081,7 +8020,7 @@ ALTER TABLE `oc_zone_to_geo_zone`
 -- AUTO_INCREMENT for table `oc_address`
 --
 ALTER TABLE `oc_address`
-MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_affiliate`
 --
@@ -8116,7 +8055,7 @@ MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=437;
 -- AUTO_INCREMENT for table `oc_category`
 --
 ALTER TABLE `oc_category`
-MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=74;
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=83;
 --
 -- AUTO_INCREMENT for table `oc_country`
 --
@@ -8146,7 +8085,7 @@ MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `oc_customer`
 --
 ALTER TABLE `oc_customer`
-MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_customer_ban_ip`
 --
@@ -8166,7 +8105,7 @@ MODIFY `customer_history_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
-MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_customer_reward`
 --
@@ -8196,7 +8135,7 @@ MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
-MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=498;
+MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=503;
 --
 -- AUTO_INCREMENT for table `oc_filter`
 --
@@ -8248,6 +8187,46 @@ MODIFY `length_class_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 ALTER TABLE `oc_manufacturer`
 MODIFY `manufacturer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
+-- AUTO_INCREMENT for table `oc_mercadolivre_api_call`
+--
+ALTER TABLE `oc_mercadolivre_api_call`
+MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_mercadolivre_attribute`
+--
+ALTER TABLE `oc_mercadolivre_attribute`
+MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_mercadolivre_attr_combination`
+--
+ALTER TABLE `oc_mercadolivre_attr_combination`
+MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_mercadolivre_category`
+--
+ALTER TABLE `oc_mercadolivre_category`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_mercadolivre_listing_type`
+--
+ALTER TABLE `oc_mercadolivre_listing_type`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_mercadolivre_order`
+--
+ALTER TABLE `oc_mercadolivre_order`
+MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_mercadolivre_product`
+--
+ALTER TABLE `oc_mercadolivre_product`
+MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_mercadolivre_status`
+--
+ALTER TABLE `oc_mercadolivre_status`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
 -- AUTO_INCREMENT for table `oc_option`
 --
 ALTER TABLE `oc_option`
@@ -8261,7 +8240,7 @@ MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
 -- AUTO_INCREMENT for table `oc_order`
 --
 ALTER TABLE `oc_order`
-MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `oc_order_download`
 --
@@ -8271,17 +8250,17 @@ MODIFY `order_download_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
-MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `oc_order_recurring`
 --
@@ -8296,12 +8275,12 @@ MODIFY `order_recurring_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
-MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=44;
 --
 -- AUTO_INCREMENT for table `oc_order_voucher`
 --
@@ -8311,7 +8290,7 @@ MODIFY `order_voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
+MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=56;
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
 --
@@ -8336,7 +8315,7 @@ MODIFY `product_option_value_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=
 -- AUTO_INCREMENT for table `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
-MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=776;
+MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=790;
 --
 -- AUTO_INCREMENT for table `oc_product_special`
 --
@@ -8381,7 +8360,7 @@ MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5554;
+MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5868;
 --
 -- AUTO_INCREMENT for table `oc_stock_status`
 --
@@ -8411,7 +8390,7 @@ MODIFY `tax_rule_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=129;
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=799;
+MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=810;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --

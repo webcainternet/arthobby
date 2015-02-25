@@ -5,11 +5,17 @@
 <div class="clear"></div>
 </section>
 <!-- Footer -->
+<div>
+	<div class="container">
+		<div class="fb-like-box" data-href="https://www.facebook.com/pages/Art-Hobby-Modelismo/218368541586705" data-width="1200" data-height="258" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+	</div>
+</div>
+
 <footer>
 	<div class="container">
 		<div class="row">
 			<?php if ($informations) { ?>
-			<div class="col-sm-2">
+			<div class="col-sm-2" style="width: 19%;">
 				<div class="block">
 					<div class="block-heading">
 						<?php echo $text_information; ?>
@@ -24,7 +30,7 @@
 				</div>
 			</div>
 			<?php } ?>
-			<div class="col-sm-2">
+			<div class="col-sm-2" style="width: 16%;">
 				<div class="block">
 					<div class="block-heading">
 						<?php echo $text_service; ?>
@@ -38,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-2">
+			<div class="col-sm-2" style="width: 16%;">
 				<div class="block">
 					<div class="block-heading">
 						<?php echo $text_extra; ?>
@@ -53,7 +59,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3" style="width: 17%;">
 				<div class="block">
 					<div class="block-heading">
 						<?php echo $text_account; ?>
@@ -68,27 +74,16 @@
 					</div>
 				</div>
 			</div>			
-			<div class="col-sm-3">
+			<div class="col-sm-3" style="width: 27%;">
 				<div class="block">
 					<div class="block-content">
 						<div class="foot-phone">
 							<?php echo $tx_phone; ?><br>
 							<span><?php echo $telephone; ?></span>
 						</div>
-						<ul class="social">
-							<li><a href="http://facebook.com">
-								<i class="fa fa-facebook-square"></i>
-								<span><?php echo $text_fb; ?></span>
-							</a></li>
-							<li><a href="http://twitter.com">
-								<i class="fa fa-twitter-square"></i>
-								<span><?php echo $text_twi; ?></span>
-							</a></li>
-							<li><a href="#">
-								<i class="fa fa-rss-square"></i>
-								<span><?php echo $text_rss; ?></span>
-							</a></li>
-						</ul>
+						<div>
+							<img src="/image/data/pagseguro_transp.png" >
+						</div>
 					</div>
 				</div>
 			</div>
@@ -97,14 +92,28 @@
 	<!-- copyright -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
-				<div id="copyright">
-					<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
-				</div>
-			</div>
+			&nbsp;
 		</div>
 	</div>
 </footer>
+
+<div>
+	<div class="container" style="margin-top: 10px;">
+		<div style="background-image: url('/image/data/logofooter.png'); width: 100%; float: right; background-size: 110px;
+height: 105px; background-repeat: no-repeat; background-position: center; text-align: center;">&nbsp;</div>
+
+		<div style="text-align: center;">
+			<div id="copyright" style="margin-top: 60px; margin-bottom: 0px;">
+				<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+			</div>
+			<br>
+		</div>
+
+
+	</div>
+</div>
+
+
 <script type="text/javascript" 	src="catalog/view/theme/<?php echo $this->config->get('config_template');?>/js/livesearch.js"></script>
 </div>
 </div>
