@@ -5,7 +5,7 @@
 <div class="clear"></div>
 </section>
 <!-- Footer -->
-<div>
+<div style="background-color: #FFF; padding-top: 30px;">
 	<div class="container">
 		<div class="fb-like-box" data-href="https://www.facebook.com/pages/Art-Hobby-Modelismo/218368541586705" data-width="1200" data-height="258" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 	</div>
@@ -82,7 +82,7 @@
 							<span><?php echo $telephone; ?></span>
 						</div>
 						<div>
-							<img src="/image/data/pagseguro_transp.png" >
+							<img src="/image/data/pagseguro_logo.png" style="margin-top: -5px;" >
 						</div>
 					</div>
 				</div>

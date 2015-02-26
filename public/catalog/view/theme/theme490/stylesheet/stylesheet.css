@@ -633,10 +633,9 @@ header .phone {
 	font-size:23px;
 	line-height:28px;
 	margin-bottom:3px;
-	color:#fff;
 }
 header .phone span {
-    color: #FABDBD;
+    color: #ed3237;
     font-size: 16px;
 }
 
@@ -652,8 +651,8 @@ header .top-links .links {
 }
 header .top-links {
 	/* background:#c2c2c2; */
-	 background-color: rgba(255, 255, 255, 0.8); 
-	/* background: #FABDBD; */
+	/* background-color: rgba(255, 255, 255, 0.8); */
+	background: #FABDBD;
 	height: 60px;
 	padding: 16px 16px 16px 5px;
 	border-radius:6px 6px 0 0;
@@ -709,7 +708,7 @@ header .toprow .links li {
 	float:right;
 }
 header .toprow .links a {	
-	color:#fff;
+	color:#000;
 }
 header .toprow .links li a i, header .toprow .links a i{
 	display:none;
@@ -791,11 +790,11 @@ header .toprow .links li a.active, header .toprow .links a:hover{
 /*======================= HEADER =======================*/
 header {
 	position: relative;
-	/* background:#ed3237; */
-	background-image: url('/image/data/aero1.jpg');
-	background-position: 0px -375px;
-	background-size: 100%;
-	padding-top:30px;
+	background: #FFF;
+	padding-top: 30px;
+	background-image: url('/image/data/bgtopo1.png');
+	background-repeat: no-repeat;
+	background-position: center 102px;
 }
 /*======================= LOGO =======================*/
 header #logo a img {
@@ -3464,21 +3463,18 @@ html[lang="de"] .related .cart a.button i {
 }
 /*======================= FOOTER =======================*/
 footer {
-	margin-top:30px;
 	padding-top:36px;
 	
-	background-image: url('/image/data/bgfooter1.jpg');
-	background-position: center;
+	background-color: #FFF;
 	clear: both;
 	overflow: hidden;
 	padding-bottom: 50px;
-	padding-top: 70px;
+	padding-top: 20px;
 }
 .common-home footer {
 	margin-top:0;
 }
 .block .block-heading {
-	color:#fff;
 	font-size:15px;
 	line-height:18px;
 	font-weight:500;
@@ -3486,6 +3482,7 @@ footer {
 	color:#fff;
 	text-transform:uppercase;
 	word-wrap:break-word;
+	color: #ff6b7c;
 }
 .block .block-content li {
 	padding:5px 0 4px
@@ -3539,6 +3536,8 @@ footer {
 	line-height:22px;
 	color:#ff6b7c;
 	margin-bottom:13px;
+	font-weight: 500;
+	display: none;
 }
 .foot-phone span{
 	font-size:23px;
