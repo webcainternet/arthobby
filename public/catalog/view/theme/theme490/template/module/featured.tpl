@@ -96,7 +96,8 @@
 									  <?php if (!$product['special']) { ?>
 									  <?php echo $product['price']; ?>
 									  <?php } else { ?>
-									  <span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
+									  De: <span class="price-old"><?php echo $product['price']; ?></span>
+									  Por: <span class="price-new"><?php echo $product['special']; ?></span>
 									  <?php } ?>
 									  
 									</div>
@@ -145,8 +146,25 @@
 						<div class="product_price price">
 							<?php if (!$product['special']) { ?>
 							<?php echo $product['price']; ?>
+							<?php
+								$precoparc = $product['price']; 
+								$precoparc = str_replace("R$", "", $precoparc);
+								$precoparc = str_replace(" ", "", $precoparc);
+								$precoparc = str_replace(".", "", $precoparc);
+								$precoparc = number_format($precoparc/12,2);
+							?>
+							<div class="div-parc">12x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
 							<?php } else { ?>
-							<span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
+							<span class="price-old">De: <?php echo $product['price']; ?></span>
+							<span class="price-new">Por: <?php echo $product['special']; ?></span>
+							<?php
+								$precoparc = $product['special']; 
+								$precoparc = str_replace("R$", "", $precoparc);
+								$precoparc = str_replace(" ", "", $precoparc);
+								$precoparc = str_replace(".", "", $precoparc);
+								$precoparc = number_format($precoparc/12,2);
+							?>
+							<div class="div-parc">12x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
 							<?php } ?>
 						</div>
 						<?php } ?>						

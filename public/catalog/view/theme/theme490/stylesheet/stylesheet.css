@@ -1371,7 +1371,7 @@ aside .box-product ul li .padding:hover .cart a.button span,
 }
 .box-product .price .price-new, .product-grid .price .price-new{ 
 	margin-right:5px;
-	float:left;
+	/* float:left; */
 }
 .box.box-filter input[type="checkbox"] {
 	float: left;
@@ -3161,6 +3161,12 @@ h1.style-1 {
 	font-weight:bold;
 	padding:23px 0;
 	margin-bottom:20px;
+}
+.price-parc {
+	font-size:32px;
+}
+.div-parc {
+	margin-top: 10px; margin-bottom: 10px; text-align: right;
 }
 .product-info .price .price-new{
 	color:#ed3237;
