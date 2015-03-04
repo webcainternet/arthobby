@@ -20,7 +20,7 @@
 
 	.box-product ul li .padding:hover .inner,
 	.product-grid ul li .padding:hover .left {
-		border-top-color: #3d9cdc;
+		border-top-color: #ed3237; /* #3d9cdc; */
 		background-color: #ed3237;
 	}
 	.box-product .padding:hover .cart a.button,
