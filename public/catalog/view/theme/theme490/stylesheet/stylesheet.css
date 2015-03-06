@@ -688,7 +688,7 @@ header .toprow .links li {
 	margin-right:0;
 }
 header .links a.active, header .links a:hover {
-	color:#FFF;
+	color:#000;
 	text-decoration:underline;
 }
 header .top-links .links li:first-child a.active i, header .top-links .links li:first-child a:hover i{
@@ -698,7 +698,7 @@ header .links a {
 	display:inline-block;
 	font-size:13px;
 	line-height:22px;
-	color:#000;	
+	color:#FFF;	
 	text-transform:uppercase;
 	vertical-align:top;
 }
