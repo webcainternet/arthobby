@@ -1768,7 +1768,7 @@ aside .banner {
 	position:relative;
 }
 aside .banner>div>div{
-	background:#000;
+	background:#FFF;
 	position:relative;
 }
 aside .banner > div.col-sm-4{
@@ -1777,11 +1777,13 @@ aside .banner > div.col-sm-4{
 }
 aside  .banner .s-desc {
 	display:block;
-	position:absolute;
+	/* position:absolute; */
 	top:9.5%;
 	left:7.6%;
 	text-align:left;
 	width:84%;
+	margin-left: 20px;
+  	padding-bottom: 20px;
 }
 aside .banner .s-desc > span{
 	color:#c2c2c2;
