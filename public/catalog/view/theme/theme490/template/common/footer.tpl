@@ -1,9 +1,17 @@
+<!-- Footer -->
 <div class="clear"></div>
 </div>
 </div>
 </div>
 <div class="clear"></div>
 </section>
+<!-- Continua Footer -->
+
+
+
+
+
+
 <!-- Footer -->
 <div style="background-color: #FFF; padding-top: 30px;">
 	<div class="container">

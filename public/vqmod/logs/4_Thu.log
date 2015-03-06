@@ -1,0 +1,64 @@
+---------- Date: 2015-03-05 22:27:28 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /Users/fernandomendes/github/arthobby/public/vqmod/xml/carousel_header_footer.xml
+   id        : Carousel: Auto-Scroll Manufacturer
+   version   : 1.5.0
+   vqmver    : 2.4.0
+   author    : MojeGalanterka.cz
+VQModObject::parseMods - Could not resolve path for [admin/language/czech/module/carousel.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-05 23:08:29 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /Users/fernandomendes/github/arthobby/public/vqmod/xml/carousel_header_footer.xml
+   id        : Carousel: Auto-Scroll Manufacturer
+   version   : 1.5.0
+   vqmver    : 2.4.0
+   author    : MojeGalanterka.cz
+
+File Name    : catalog/view/theme/*/template/module/carousel.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <a href="<?php echo $banner['link']; ?>">
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-05 23:08:30 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /Users/fernandomendes/github/arthobby/public/vqmod/xml/carousel_header_footer.xml
+   id        : Carousel: Auto-Scroll Manufacturer
+   version   : 1.5.0
+   vqmver    : 2.4.0
+   author    : MojeGalanterka.cz
+
+File Name    : catalog/view/theme/*/template/module/carousel.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <a href="<?php echo $banner['link']; ?>">
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-05 23:19:04 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /Users/fernandomendes/github/arthobby/public/vqmod/xml/carousel_header_footer.xml
+   id        : Carousel: Auto-Scroll Manufacturer
+   version   : 1.5.0
+   vqmver    : 2.4.0
+   author    : MojeGalanterka.cz
+VQModObject::parseMods - Could not resolve path for [admin/language/czech/module/carousel.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-03-05 23:19:05 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /Users/fernandomendes/github/arthobby/public/vqmod/xml/carousel_header_footer.xml
+   id        : Carousel: Auto-Scroll Manufacturer
+   version   : 1.5.0
+   vqmver    : 2.4.0
+   author    : MojeGalanterka.cz
+VQModObject::parseMods - Could not resolve path for [admin/language/czech/module/carousel.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
