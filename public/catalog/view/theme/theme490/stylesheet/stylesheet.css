@@ -1684,6 +1684,7 @@ aside .banner {
 	background:#fff;
 	border:1px solid #fff;
 	margin-left:0;
+	display: none;
 	margin-right:0;
 }
 #content .banner>div.col-sm-4 {
