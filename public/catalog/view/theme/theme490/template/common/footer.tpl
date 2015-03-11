@@ -107,12 +107,11 @@
 
 <div>
 	<div class="container" style="margin-top: 10px;">
-		<div style="background-image: url('/image/data/logofooter.png'); width: 100%; float: right; background-size: 110px;
-height: 105px; background-repeat: no-repeat; background-position: center; text-align: center;">&nbsp;</div>
 
 		<div style="text-align: center;">
-			<div id="copyright" style="margin-top: 60px; margin-bottom: 0px;">
-				<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+			<div id="copyright" style="margin-bottom: 10px;">
+				<div>Art hobby modelismo Ltda | CNPJ 09.499.182/0001-61 | IE 278170820118 | Estrada da Aldeia,186 - Granja Viana - Cotia - SP</div>
+				<div><?php echo $powered; ?><!-- [[%FOOTER_LINK]] --></div>
 			</div>
 			<br>
 		</div>
