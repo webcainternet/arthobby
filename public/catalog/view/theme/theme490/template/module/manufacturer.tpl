@@ -1,3 +1,4 @@
+<?php /*
 <div class="clear"></div>
 <div class="box man info">
   <div class="box-heading"><span><?php echo $heading_title; ?></span></div>
@@ -16,3 +17,4 @@
 	<div class="clear"></div>
   </div>
 </div>
+*/ ?>
