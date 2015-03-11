@@ -2711,7 +2711,7 @@ input#sub_category {
 .box-product .image a{
 	display:inline-block;
 	max-width:100%;
-	padding:32px 44px 43px 44px;
+	/* padding:32px 44px 43px 44px; */
 }
 .box-product.box-subcat .image a{
 	padding:33px;
@@ -3500,7 +3500,7 @@ footer {
 	padding:5px 0 4px
 }
 .block .block-content li a:hover {
-	color:#fff;
+	color:#333;
 	}
 .block .block-content li a {
 	color:#ff6b7c;

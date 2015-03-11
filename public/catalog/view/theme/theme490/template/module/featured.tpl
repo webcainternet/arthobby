@@ -1,3 +1,24 @@
+<!-- Barra de newsletter -->
+<style type="text/css">
+	.divnews {
+		float: left;
+		width: 33%;
+		padding: 5px;
+		background-color: red;
+	}
+
+</style>
+
+<div>
+	<div class="divnews">Frete grátis</div>
+	<div class="divnews">Tudo em 12x sem juros</div>
+	<div class="divnews">Receba as novidades!</div>
+</div>
+<!-- FIM Barra de newsletter -->
+
+
+
+
 <script type="text/javascript">
 	if ($('body').width() > 767) {
 		(function($){$.fn.equalHeights=function(minHeight,maxHeight){tallest=(minHeight)?minHeight:0;this.each(function(){if($(this).height()>tallest){tallest=$(this).height()}});if((maxHeight)&&tallest>maxHeight)tallest=maxHeight;return this.each(function(){$(this).height(tallest)})}})(jQuery)
