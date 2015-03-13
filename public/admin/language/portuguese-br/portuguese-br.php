@@ -112,6 +112,7 @@ $_['tab_transaction']         = 'Trasações';
 $_['tab_voucher']             = 'Vale';
 $_['tab_voucher_history']     = 'Histórico de vale presente';
 $_['tab_price']               = 'Preço';
+$_['tab_marketplace_links']         = 'Marketplace Links';
 
 
 // Error
