@@ -64,6 +64,7 @@ body {
 	line-height:18px;
 	font-weight:normal;
 	min-width:260px;
+	border-top: solid 5px #ed3237;
 }
 #content{
 	margin-top:30px;
@@ -616,7 +617,7 @@ body div.shadow {
 header .toprow {
 	float:right;
 	display:inline-block;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 header .toprow-1 {
 	z-index:100;
@@ -793,8 +794,8 @@ header .toprow .links li a.active, header .toprow .links a:hover{
 header {
 	position: relative;
 	background: #FFF;
-	padding-top: 30px;
-	background-image: url('/image/data/bgtopo1.png');
+	padding-top: 10px;
+	/* background-image: url('/image/data/bgtopo1.png'); */
 	background-repeat: no-repeat;
 	background-position: center 102px;
 }
@@ -806,13 +807,13 @@ header #logo a img {
 header #logo {
 	float:left;
 	margin-left:-2px;
-	margin-bottom:22px;
+	margin-bottom:10px;
 }
 /*======================= HEADER CART =======================*/
 .cart-position {
 	float:right;
 	position:relative;
-	margin-top:17px;
+	margin-top:37px;
 	margin-left:20px;
 	margin-right:5px;
 }
