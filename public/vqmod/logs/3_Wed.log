@@ -1,0 +1,12 @@
+---------- Date: 2015-03-11 01:05:30 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /Users/fernandomendes/github/arthobby/public/vqmod/xml/carousel_header_footer.xml
+   id        : Carousel: Auto-Scroll Manufacturer
+   version   : 1.5.0
+   vqmver    : 2.4.0
+   author    : MojeGalanterka.cz
+VQModObject::parseMods - Could not resolve path for [admin/language/czech/module/carousel.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
