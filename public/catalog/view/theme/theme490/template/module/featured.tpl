@@ -4,15 +4,20 @@
 		float: left;
 		width: 33%;
 		padding: 5px;
-		background-color: red;
+		  color: #FFF;
+  	font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    padding: 10px;
 	}
 
 </style>
 
-<div>
-	<div class="divnews">Frete grátis</div>
-	<div class="divnews">Tudo em 12x sem juros</div>
-	<div class="divnews">Receba as novidades!</div>
+<div style="background-color: #ed3237; height: 80px; border-radius: 5px;">
+	<div class="divnews" style="margin-top: 10px;">Frete grátis<br><span style="font-size: 14px; ">Para todas as compras acima de R$ 200,00</span></div>
+	<div class="divnews" style="margin-top: 20px; text-align: center;">Tudo em 12x sem juros</div>
+	<div class="divnews" style="font-size: 14px;">Receba as novidades!<br>
+		<input type="search" name="search" placeholder="" value="" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;"><i class="fa fa-search" style="font-size: 22px; margin-left: 10px;"></i></div>
 </div>
 <!-- FIM Barra de newsletter -->
 
