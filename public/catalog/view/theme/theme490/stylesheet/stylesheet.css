@@ -3403,6 +3403,7 @@ td.image {
 .image {
 	position:relative;
 	padding-left: 30px;
+	padding: 30px;
 }
 .related-info .cart-button .cart {
 	float:none;
