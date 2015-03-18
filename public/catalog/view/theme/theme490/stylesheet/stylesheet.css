@@ -3401,7 +3401,8 @@ td.image {
 	position:static
 }
 .image {
-	position:relative
+	position:relative;
+	padding-left: 30px;
 }
 .related-info .cart-button .cart {
 	float:none;
