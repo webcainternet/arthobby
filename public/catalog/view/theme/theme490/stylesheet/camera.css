@@ -188,12 +188,12 @@
 	margin-bottom:14px;	
 }
 .camera_caption h1 span{
-	color:#c2c2c2;
+	color:#333;
 }
 .camera_caption h2{
 	font-size:28px;
 	line-height:34px;
-	color:#c2c2c2;
+	color:#333;
 	font-weight:bold;
 	font-style:italic;
 	margin-bottom:7px;
@@ -201,7 +201,7 @@
 .camera_caption p{
 	font-size:12px;
 	line-height:18px;
-	color:#c2c2c2;
+	color:#333;
 	margin-bottom:0;
 }
 
