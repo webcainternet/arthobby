@@ -13,7 +13,7 @@
 
 </style>
 
-<div style="background-color: #ed3237; height: 80px; border-radius: 5px;">
+<div style="background-color: #ed3237; height: 80px; border-radius: 5px; margin-bottom: 30px;">
 	<div class="divnews" style="margin-top: 10px;">Frete grátis<br><span style="font-size: 14px; ">Para todas as compras acima de R$ 200,00</span></div>
 	<div class="divnews" style="margin-top: 20px; text-align: center;">Tudo em 12x sem juros</div>
 	<div class="divnews" style="font-size: 14px;">Receba as novidades!<br>
