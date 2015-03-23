@@ -1195,7 +1195,7 @@ header #cart .empty {
 	top: 0;
 	right:0;
 	position: absolute;
-	display:inline-block;
+	display:none;
 	font-size:22px;
 	color:#999;
 	line-height:30px;
@@ -1415,7 +1415,7 @@ aside .box-product ul li .padding:hover .cart a.button span,
 .box-product .rating, .product-grid .rating{
 	position:absolute;
 	z-index:2;
-	display: inline-block;
+	display: none;
 	left:0;
 	bottom:0;
 	padding:15px 15px 20px 20px;
@@ -1761,6 +1761,7 @@ aside .banner {
 	font-weight:bold;
 	font-style:italic;
 	margin-bottom:5px;	
+	margin-top: 250px;
 }
 .banner .s-desc h2 span{
 	font-size:54px;
@@ -1780,7 +1781,7 @@ aside .banner > div.col-sm-4{
 }
 aside  .banner .s-desc {
 	display:block;
-	/* position:absolute; */
+	position:absolute;
 	top:9.5%;
 	left:7.6%;
 	text-align:left;

@@ -119,6 +119,13 @@
 		-o-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
+
+	.image2 a img {
+		transform: scale(1.1,1.1);
+		  -o-transform: scale(1.1,1.1);
+		  -moz-transform: scale(1.1,1.1);
+		  -webkit-transform: scale(1.1,1.1);
+	}
 	
 	.box-product .image2 a:hover img,
 	.box-product .image a:hover img,

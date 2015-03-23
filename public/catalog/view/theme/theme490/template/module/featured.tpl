@@ -14,10 +14,20 @@
 </style>
 
 <div style="background-color: #ed3237; height: 80px; border-radius: 5px; margin-bottom: 30px;">
-	<div class="divnews" style="margin-top: 10px;">Frete grátis<br><span style="font-size: 14px; ">Para todas as compras acima de R$ 200,00</span></div>
-	<div class="divnews" style="margin-top: 20px; text-align: center;">Tudo em 12x sem juros</div>
-	<div class="divnews" style="font-size: 14px;">Receba as novidades!<br>
-		<input type="search" name="search" placeholder="" value="" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;"><i class="fa fa-search" style="font-size: 22px; margin-left: 10px;"></i></div>
+	<div class="divnews" style="margin-top: 10px;">
+		<div style="float: left; font-size: 48px; padding: 11px; padding-top: 0px; padding-right: 0px; "><img src="/image/data/news-card1.png" height="40"></div>
+		<div style="float: left; font-size: 48px; padding: 11px; ">6x</div>
+		<div style="float: left; font-size: 18px; line-height: 20px; text-transform: uppercase; font-weight: bold;
+ ">Sem juros<br>No cartão</div>
+	</div>
+	<div class="divnews" style="margin-top: 10px;">
+		<div style="float: left; font-size: 48px; padding: 0px; padding-top: 0px; padding-right: 0px; "><img src="/image/data/news-boleto.png" height="40"></div>
+		<div style="float: left; font-size: 48px; padding: 11px; ">5%</div>
+		<div style="float: left; font-size: 18px; line-height: 20px; text-transform: uppercase; font-weight: bold;
+ ">De desconto<br>No boleto</div>
+	</div>
+	<div class="divnews" style="font-size: 14px;">Cadastre-se e receba as novidades<br>
+		<input type="search" name="search" placeholder="" value="" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;"><input type="submit" value="OK" style="  border: 0px; color: #FFF; background-color: #ed3237; border-radius: 5px; width: 30px; font-size: 14px; height: 33px;"></div>
 </div>
 <!-- FIM Barra de newsletter -->
 
@@ -177,9 +187,9 @@
 								$precoparc = str_replace("R$", "", $precoparc);
 								$precoparc = str_replace(" ", "", $precoparc);
 								$precoparc = str_replace(".", "", $precoparc);
-								$precoparc = number_format($precoparc/12,2);
+								$precoparc = number_format($precoparc/6,2);
 							?>
-							<div class="div-parc">12x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
+							<div class="div-parc">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
 							<?php } else { ?>
 							<span class="price-old">De: <?php echo $product['price']; ?></span>
 							<span class="price-new">Por: <?php echo $product['special']; ?></span>
@@ -188,9 +198,9 @@
 								$precoparc = str_replace("R$", "", $precoparc);
 								$precoparc = str_replace(" ", "", $precoparc);
 								$precoparc = str_replace(".", "", $precoparc);
-								$precoparc = number_format($precoparc/12,2);
+								$precoparc = number_format($precoparc/6,2);
 							?>
-							<div class="div-parc">12x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
+							<div class="div-parc">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
 							<?php } ?>
 						</div>
 						<?php } ?>						
