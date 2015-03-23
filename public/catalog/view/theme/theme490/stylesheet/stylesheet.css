@@ -3191,6 +3191,9 @@ h1.style-1 {
 	font-weight:normal;
 	margin-right:10px;
 }
+.price-tax{
+	display: none;
+}
 .product-info .price .discount{
 	text-transform:none;
 	font-weight:normal;
@@ -3499,7 +3502,7 @@ footer {
 	color:#fff;
 	text-transform:uppercase;
 	word-wrap:break-word;
-	color: #ff6b7c;
+	color: #ed3237;
 }
 .block .block-content li {
 	padding:5px 0 4px
@@ -3508,7 +3511,7 @@ footer {
 	color:#333;
 	}
 .block .block-content li a {
-	color:#ff6b7c;
+	color:#ed3237;
 	font-size:13px;
 	line-height:16px;
 	text-transform:uppercase;
@@ -4038,6 +4041,8 @@ table.radio {
 
 .zoomWrapper img{
 	background:#fff;
+	margin-left: -25px;
+  	margin-top: -25px;
 }
 .zoomWindowContainer .zoomWindow{
 	border-color:#dcdcdc !important;

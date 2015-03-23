@@ -19,6 +19,7 @@
 		<div style="float: left; font-size: 48px; padding: 11px; ">6x</div>
 		<div style="float: left; font-size: 18px; line-height: 20px; text-transform: uppercase; font-weight: bold;
  ">Sem juros<br>No cartão</div>
+ 		<div style="float: left; width: 100%; height: 10px; font-size: 10px; margin-top: -10px;"><a href="/index.php?route=information/information&information_id=5" style="text-decoration: none; color: #FFF;">* Confira as regras</a></div>
 	</div>
 	<div class="divnews" style="margin-top: 10px;">
 		<div style="float: left; font-size: 48px; padding: 0px; padding-top: 0px; padding-right: 0px; "><img src="/image/data/news-boleto.png" height="40"></div>
@@ -27,7 +28,8 @@
  ">De desconto<br>No boleto</div>
 	</div>
 	<div class="divnews" style="font-size: 14px;">Cadastre-se e receba as novidades<br>
-		<input type="search" name="search" placeholder="" value="" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;"><input type="submit" value="OK" style="  border: 0px; color: #FFF; background-color: #ed3237; border-radius: 5px; width: 30px; font-size: 14px; height: 33px;"></div>
+		<input type="search" name="search" value="" placeholder="Digite seu e-mail" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;"><input type="submit" value="OK" style="  border: 0px; color: #FFF; background-color: #ed3237; border-radius: 5px; width: 30px; font-size: 12px; height: 33px; float: right;
+  margin: 6px;"></div>
 </div>
 <!-- FIM Barra de newsletter -->
 
