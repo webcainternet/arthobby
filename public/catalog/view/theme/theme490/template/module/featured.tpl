@@ -28,8 +28,7 @@
  ">De desconto<br>No boleto</div>
 	</div>
 	<div class="divnews" style="font-size: 14px;">Cadastre-se e receba as novidades<br>
-		<input type="search" name="search" value="" placeholder="Digite seu e-mail" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;"><input type="submit" value="OK" style="  border: 0px; color: #FFF; background-color: #ed3237; border-radius: 5px; width: 30px; font-size: 12px; height: 33px; float: right;
-  margin: 6px;"></div>
+		<input type="search" name="search" value="" placeholder="Digite seu e-mail" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;"><input type="submit" value="OK" style="  border: 0px; color: #FFF; background-color: #ed3237; border-radius: 5px;   margin: 6px; margin-left: 0px; margin-top: 4px; font-size: 12px; height: 33px; float: right; height: 29px;"></div>
 </div>
 <!-- FIM Barra de newsletter -->
 
