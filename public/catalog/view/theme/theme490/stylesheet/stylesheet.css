@@ -4128,3 +4128,6 @@ table.radio {
 	opacity:.7;
 }
 
+.st_twitter_hcount .st_googleplus_hcount .st_pinterest_hcount {
+	display: none;
+}
