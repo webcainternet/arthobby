@@ -45,6 +45,20 @@ class ControllerPaymentBancoSantander extends Controller {
 	$valor_cobrado = str_replace(",", ".",$valor_cobrado);
 	$valor_boleto=number_format($valor_cobrado+$taxa_boleto, 2, ',', '');
 
+	/*function left($str, $length) {
+		 return substr($str, 0, $length);
+	}
+
+	function right($str, $length) {
+		 return substr($str, -$length);
+	}*/
+
+	// echo left("Hello World", 5); // Hello
+	// echo right("Hello World", 5); // World
+	
+	//$dadosboleto["nosso_numero"] = str_pad($pedidoId, 7, STR_PAD_LEFT);  // Nosso numero sem o DV - REGRA: Máximo de 7 caracteres!
+	//$dadosboleto["nosso_numero"] = right($pedidoId, 7, "0");  // Nosso numero sem o DV - REGRA: Máximo de 7 caracteres!	
+	
 	$dadosboleto["nosso_numero"] = str_pad($pedidoId, 7, "0", STR_PAD_LEFT);  // Nosso numero sem o DV - REGRA: Máximo de 7 caracteres!
 	$dadosboleto["numero_documento"] = $dadosboleto["nosso_numero"];	// Num do pedido ou do documento = Nosso numero
 	$dadosboleto["data_vencimento"] = $data_venc; // Data de Vencimento do Boleto - REGRA: Formato DD/MM/AAAA
