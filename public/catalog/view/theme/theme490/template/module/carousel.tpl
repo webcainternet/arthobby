@@ -19,8 +19,8 @@
 	}
 </style>
 <div class="container">
-		<div class="footerbanner" style="margin-right: 10px;"><a href="index.php?route=product/product&amp;product_id=28"><img style="width: 100%;" src="/image/data/banner-footer-1.jpg" alt="" title=""></a></div>
-		<div class="footerbanner" style="margin-left: 10px;"><a href="index.php?route=product/product&amp;product_id=29"><img style="width: 100%;" src="/image/data/banner-footer-2.jpg" alt="" title=""></a></div>
+		<div class="footerbanner" style="margin-right: 10px;"><a href="index.php?route=product/product&amp;product_id=28"><img style="width: 100%; border-radius: 5px;" src="/image/data/banner-footer-1.jpg" alt="" title=""></a></div>
+		<div class="footerbanner" style="margin-left: 10px;"><a href="index.php?route=product/product&amp;product_id=29"><img style="width: 100%; border-radius: 5px;" src="/image/data/banner-footer-2.jpg" alt="" title=""></a></div>
 </div>
 
 <div class="container">
