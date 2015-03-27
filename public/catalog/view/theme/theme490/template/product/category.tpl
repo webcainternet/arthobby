@@ -94,7 +94,7 @@
 		<div class="padding">
 		
 		<div class="image">		
-		<a href="<?php echo $product['href']; ?>"><?php if ($product['thumb']) { ?><img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /><?php } else{ ?><img src="catalog/view/theme/theme490/image/no-image.png" alt="" /><?php } ?></a>
+		<a href="<?php echo $product['href']; ?>"><?php if ($product['thumb']) { ?><img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>1111" alt="<?php echo $product['name']; ?>3333" /><?php } else{ ?><img src="catalog/view/theme/theme490/image/no-image.png" alt="" /><?php } ?></a>
 		
 		<div class="rating">
 			<img src="catalog/view/theme/theme490/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" />
@@ -111,8 +111,42 @@
 		<?php } ?>
 		<?php if (!$product['special']) { ?>
 		<?php echo $product['price']; ?>
+		<?php
+								$precoparc = $product['price']; 
+								$precoparc = str_replace("R$", "", $precoparc);
+								$precoparc = str_replace(" ", "", $precoparc);
+								$precoparc = str_replace(".", "", $precoparc);
+								$precoparc = number_format($precoparc/6,2,',','.');
+
+								$precoboleto = $product['price']; 
+								$precoboleto = str_replace("R$", "", $precoboleto);
+								$precoboleto = str_replace(" ", "", $precoboleto);
+								$precoboleto = str_replace(".", "", $precoboleto);
+								$precoboleto = number_format($precoboleto*0.95,2,',','.');
+							?>
+							
+							<div class="div-parc">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
+
+							<span class="price-new">R$ <?php echo $precoboleto; ?> no boleto</span>
 		<?php } else { ?><span class="price-new"><?php echo $product['special']; ?></span>
 		<span class="price-old"><?php echo $product['price']; ?></span> 
+		<?php
+								$precoparc = $product['special']; 
+								$precoparc = str_replace("R$", "", $precoparc);
+								$precoparc = str_replace(" ", "", $precoparc);
+								$precoparc = str_replace(".", "", $precoparc);
+								$precoparc = number_format($precoparc/6,2,',','.');
+
+								$precoboleto = $product['special']; 
+								$precoboleto = str_replace("R$", "", $precoboleto);
+								$precoboleto = str_replace(" ", "", $precoboleto);
+								$precoboleto = str_replace(".", "", $precoboleto);
+								$precoboleto = number_format($precoboleto*0.95,2,',','.');
+							?>
+							
+							<div class="div-parc">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
+
+							<span class="price-new">R$ <?php echo $precoboleto; ?> no boleto</span>
 		<?php } ?>
 		</div>
 		<?php } ?>
@@ -219,7 +253,6 @@ function display(view) {
 				html += '<div class="price">' + price  + '</div>';
 			}
 			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
-			
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
 			html += '<div class="cart-button">';
 			html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';

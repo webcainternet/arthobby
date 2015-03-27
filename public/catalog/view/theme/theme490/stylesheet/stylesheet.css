@@ -1214,7 +1214,6 @@ header #cart .empty {
 }
 aside .box-product ul li .padding:hover .inner,
 .box-product .related-slider li:hover .inner {
-	border-top-color: #3d9cdc;
 	background-color: #ed3237;
 }
 aside .box-product ul li .padding:hover .cart a.button,

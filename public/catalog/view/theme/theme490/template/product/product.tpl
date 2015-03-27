@@ -82,9 +82,47 @@
 	  <div class="price">
 		<span class="text-price"><?php echo $text_price; ?></span>
 		<?php if (!$special) { ?>
-		<span class="price-new"><?php echo $price; ?></span>
+		<span class="price-new" style="font-size: 18px;"><?php echo $price; ?></span>
+
+		<?php
+								$precoparc = $price; 
+								$precoparc = str_replace("R$", "", $precoparc);
+								$precoparc = str_replace(" ", "", $precoparc);
+								$precoparc = str_replace(".", "", $precoparc);
+								$precoparc = number_format($precoparc/6,2,',','.');
+
+								$precoboleto = $$price; 
+								$precoboleto = str_replace("R$", "", $precoboleto);
+								$precoboleto = str_replace(" ", "", $precoboleto);
+								$precoboleto = str_replace(".", "", $precoboleto);
+								$precoboleto = number_format($precoboleto*0.95,2,',','.');
+							?>
+							
+							<div class="div-parc" style="text-align: left; margin-left: 10%; margin-top: 20px;">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
+
+							<span class="price-new" style="font-size: 18px;">R$ <?php echo $precoboleto; ?> no boleto</span>
+
 		<?php } else { ?>
-		<span class="price-new"><?php echo $special; ?></span><span class="price-old"><?php echo $price; ?></span> 
+		<span class="price-new" style="font-size: 18px;"><?php echo $special; ?></span><span class="price-old"><?php echo $price; ?></span> 
+
+		<?php
+								$precoparc = $special; 
+								$precoparc = str_replace("R$", "", $precoparc);
+								$precoparc = str_replace(" ", "", $precoparc);
+								$precoparc = str_replace(".", "", $precoparc);
+								$precoparc = number_format($precoparc/6,2,',','.');
+
+								$precoboleto = $special; 
+								$precoboleto = str_replace("R$", "", $precoboleto);
+								$precoboleto = str_replace(" ", "", $precoboleto);
+								$precoboleto = str_replace(".", "", $precoboleto);
+								$precoboleto = number_format($precoboleto*0.95,2,',','.');
+							?>
+							
+							<div class="div-parc" style="text-align: left; margin-left: 10%; margin-top: 20px;">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
+
+							<span class="price-new" style="font-size: 18px;">R$ <?php echo $precoboleto; ?> no boleto</span>
+
 		<?php } ?>
 		<?php if ($tax) { ?>
 		<span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span>
