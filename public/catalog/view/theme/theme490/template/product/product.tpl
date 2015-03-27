@@ -91,7 +91,7 @@
 								$precoparc = str_replace(".", "", $precoparc);
 								$precoparc = number_format($precoparc/6,2,',','.');
 
-								$precoboleto = $$price; 
+								$precoboleto = $price; 
 								$precoboleto = str_replace("R$", "", $precoboleto);
 								$precoboleto = str_replace(" ", "", $precoboleto);
 								$precoboleto = str_replace(".", "", $precoboleto);
