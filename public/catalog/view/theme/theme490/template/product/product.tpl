@@ -85,17 +85,23 @@
 		<span class="price-new" style="font-size: 18px;"><?php echo $price; ?></span>
 
 		<?php
-								$precoparc = $price; 
+								$precoparc = $price;
 								$precoparc = str_replace("R$", "", $precoparc);
 								$precoparc = str_replace(" ", "", $precoparc);
 								$precoparc = str_replace(".", "", $precoparc);
-								$precoparc = number_format($precoparc/6,2,',','.');
+								$precoparc = str_replace(",", "", $precoparc);
+								$precoparc = $precoparc / 6;
+								$precoparc = $precoparc / 100;
+								$precoparc = number_format($precoparc,2,',','.');
 
 								$precoboleto = $price; 
 								$precoboleto = str_replace("R$", "", $precoboleto);
 								$precoboleto = str_replace(" ", "", $precoboleto);
 								$precoboleto = str_replace(".", "", $precoboleto);
-								$precoboleto = number_format($precoboleto*0.95,2,',','.');
+								$precoboleto = str_replace(",", "", $precoboleto);
+								$precoboleto = $precoboleto / 100;
+								$precoboleto = $precoboleto*0.95;
+								$precoboleto = number_format($precoboleto,2,',','.');
 							?>
 							
 							<div class="div-parc" style="text-align: left; margin-left: 10%; margin-top: 20px;">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>
@@ -110,13 +116,19 @@
 								$precoparc = str_replace("R$", "", $precoparc);
 								$precoparc = str_replace(" ", "", $precoparc);
 								$precoparc = str_replace(".", "", $precoparc);
-								$precoparc = number_format($precoparc/6,2,',','.');
+								$precoparc = str_replace(",", "", $precoparc);
+								$precoparc = $precoparc / 6;
+								$precoparc = $precoparc / 100;
+								$precoparc = number_format($precoparc,2,',','.');
 
 								$precoboleto = $special; 
 								$precoboleto = str_replace("R$", "", $precoboleto);
 								$precoboleto = str_replace(" ", "", $precoboleto);
 								$precoboleto = str_replace(".", "", $precoboleto);
-								$precoboleto = number_format($precoboleto*0.95,2,',','.');
+								$precoboleto = str_replace(",", "", $precoboleto);
+								$precoboleto = $precoboleto / 100;
+								$precoboleto = $precoboleto*0.95;
+								$precoboleto = number_format($precoboleto,2,',','.');
 							?>
 							
 							<div class="div-parc" style="text-align: left; margin-left: 10%; margin-top: 20px;">6x de <span class="price-parc">R$ <?php echo $precoparc; ?></span></div>

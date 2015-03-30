@@ -135,12 +135,17 @@
 								$precoparc = str_replace("R$", "", $precoparc);
 								$precoparc = str_replace(" ", "", $precoparc);
 								$precoparc = str_replace(".", "", $precoparc);
-								$precoparc = number_format($precoparc/6,2,',','.');
+								$precoparc = str_replace(",", "", $precoparc);
+								$precoparc = $precoparc / 100;
+								$precoparc = $precoparc / 6;
+								$precoparc = number_format($precoparc,2,',','.');
 
 								$precoboleto = $product['price']; 
 								$precoboleto = str_replace("R$", "", $precoboleto);
 								$precoboleto = str_replace(" ", "", $precoboleto);
 								$precoboleto = str_replace(".", "", $precoboleto);
+								$precoboleto = str_replace(",", "", $precoboleto);
+								$precoboleto = $precoboleto / 100;
 								$precoboleto = number_format($precoboleto*0.95,2,',','.');
 							?>
 							
@@ -154,12 +159,17 @@
 								$precoparc = str_replace("R$", "", $precoparc);
 								$precoparc = str_replace(" ", "", $precoparc);
 								$precoparc = str_replace(".", "", $precoparc);
-								$precoparc = number_format($precoparc/6,2,',','.');
+								$precoparc = str_replace(",", "", $precoparc);
+								$precoparc = $precoparc / 6;
+								$precoparc = $precoparc / 100;
+								$precoparc = number_format($precoparc,2,',','.');
 
 								$precoboleto = $product['special']; 
 								$precoboleto = str_replace("R$", "", $precoboleto);
 								$precoboleto = str_replace(" ", "", $precoboleto);
 								$precoboleto = str_replace(".", "", $precoboleto);
+								$precoboleto = str_replace(",", "", $precoboleto);
+								$precoboleto = $precoboleto / 100;
 								$precoboleto = number_format($precoboleto*0.95,2,',','.');
 							?>
 							
