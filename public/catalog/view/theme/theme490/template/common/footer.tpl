@@ -111,6 +111,7 @@
 		<div style="text-align: center;">
 			<div id="copyright" style="margin-bottom: 10px;">
 				<div>Art hobby modelismo Ltda | CNPJ 09.499.182/0001-61 | IE 278170820118 | Estrada da Aldeia,186 - Granja Viana - Cotia - SP</div>
+				<div>Todos os preços e condições do site são validos apenas para compras on line e não se aplicam para nossas lojas físicas</div>
 				<div><?php echo $powered; ?><!-- [[%FOOTER_LINK]] --></div>
 			</div>
 			<br>
