@@ -13,6 +13,20 @@
 
 </style>
 
+<script type="text/javascript">
+	function AddNewsletter() {
+		$.ajax({
+          type: 'POST',
+          data: {add:$('#emailnews').val()},
+          url:'/add_email.php',
+          success: function(retorno){
+          	alert("E-mail adicionado com sucesso!");
+          	$('#emailnews').val('');
+          }
+        });
+	}
+</script>
+
 <div style="background-color: #ed3237; height: 80px; border-radius: 5px; margin-bottom: 30px;">
 	<div class="divnews" style="margin-top: 10px;">
 		<div style="float: left; font-size: 48px; padding: 11px; padding-top: 0px; padding-right: 0px; "><img src="/image/data/news-card1.png" height="40"></div>
@@ -28,7 +42,8 @@
  ">De desconto<br>No boleto</div>
 	</div>
 	<div class="divnews" style="font-size: 14px;">Cadastre-se e receba as novidades<br>
-		<input type="search" name="search" value="" placeholder="Digite seu e-mail" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;   height: 29px;"><input type="submit" value="OK" style="  border: 0px; color: #FFF; background-color: #ed3237; border-radius: 5px;   margin: 6px; margin-left: 0px; margin-top: 4px; font-size: 12px; height: 33px; float: right; height: 29px;"></div>
+		<input type="text" id="emailnews" name="emailnews" value="" placeholder="Digite seu e-mail" style="border-radius: 5px; border: 0px; margin-top: 5px; width: 225px;   height: 29px;"><input type="submit" onclick="AddNewsletter()" value="OK" style="  border: 0px; color: #FFF; background-color: #ed3237; border-radius: 5px;   margin: 6px; margin-left: 0px; margin-top: 4px; font-size: 12px; height: 33px; float: right; height: 29px;">
+	</div>
 </div>
 <!-- FIM Barra de newsletter -->
 
