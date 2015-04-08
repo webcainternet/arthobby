@@ -1,0 +1,22 @@
+MÓDULO AVISO DE DISPONIBILIDADE(AVISEME)
+---------------------
+Módulo para que o cliente solicite o aviso de disponibilidade do produto na loja.
+
+# Compatilibidade com versões Opencart
+--------------------
+1.5.5, 1.5.5.1, 1.5.6, 1.5.6.1, 1.5.6.2, 1.5.6.3, 1.5.6.4
+
+# Instalação:
+---------------
+1 - Extraia os arquivos e faça upload do conteúdo da pasta "upload" na raiz da sua loja;
+
+2 - Em Extensões->Módulos->Aviso de Disponibilidade de Produto clique em instalar;
+
+2 - Ao acessar a tela do módulo, clique no botão configurações e defina o assunto e a mensagem que será enviada ao cliente avisando a disponibilidade do produto. Nesta mesma tela habilite a situação do módulo.
+
+3 - Acompanhe as solicitações dos visitantes no painel de administração em Extensões->Módulos->Aviso de Disponibilidade de Produto.
+
+
+---------------------------
+Em caso de eventualidades no funcionamento do módulo, relatar para atendimento@joseanmatias.com.br.
+---------------------------

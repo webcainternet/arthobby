@@ -72,3 +72,11 @@
 2015-03-05 23:19:05 - PHP Notice:  Undefined variable: module in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/common/footer.tpl on line 24
 2015-03-05 23:19:05 - PHP Notice:  Undefined variable: limit in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/common/footer.tpl on line 26
 2015-03-05 23:19:05 - PHP Notice:  Undefined variable: scroll in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/common/footer.tpl on line 27
+2015-03-27 2:16:35 - PHP Notice:  Undefined variable: product in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 110
+2015-03-27 2:16:35 - PHP Notice:  Undefined variable: product in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 116
+2015-03-27 2:16:35 - PHP Notice:  Undefined variable: product in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 110
+2015-03-27 2:16:35 - PHP Notice:  Undefined variable: product in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 116
+2015-03-27 11:03:47 - PHP Notice:  Undefined variable: R$ 777,00 in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 94
+2015-03-27 11:08:26 - PHP Notice:  Undefined variable: R$ 777,00 in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 94
+2015-03-27 11:08:41 - PHP Notice:  Undefined variable: R$ 777,00 in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 94
+2015-03-27 11:09:14 - PHP Notice:  Undefined variable: R$ 777,00 in /Users/fernandomendes/github/arthobby/public/catalog/view/theme/theme490/template/product/product.tpl on line 94

@@ -66,7 +66,8 @@
 	
 	<div class="col-sm-8"><?php } else { ?><div class="col-sm-12"><?php } ?>
 		<h1><?php echo $heading_title; ?></h1>
-	  <div class="description">
+	<!-- aviseme1 -->  
+	<div class="description">
 		<div class="product-section">
 			<?php if ($manufacturer) { ?>
 			<span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
@@ -371,6 +372,7 @@
 			<?php echo $description; ?>
 		</div>
 	</div>
+	<!-- aviseme2 -->
 	<?php if ($attribute_groups) { ?>
 	<div class="tabs">
 		<div class="tab-heading">

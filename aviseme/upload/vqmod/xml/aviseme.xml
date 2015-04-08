@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+      <id>Aviso de Disponibilidade de Produto</id>
+      <version>1.0.0</version>
+      <vqmver>2.3.0</vqmver>
+      <author>Josean Matias (www.joseanmatias.com.br)</author>
+      <file name="catalog/controller/product/product.php">
+            <operation error="abort">
+                  <search position="before"><![CDATA['common/column_left',]]>
+                  </search>
+                  <add><![CDATA[
+                              'module/aviseme',
+                              ]]>
+                  </add>
+            </operation>
+      </file>
+      <file path="catalog/controller/module/" name="bestseller.php,latest.php,special.php">
+            <operation error="skip">
+                  <search position="before"><![CDATA[$this->data['products'][] = array(]]>
+                  </search>
+                  <add><![CDATA[
+                        if ($result['subtract'] && (!$result['quantity'] || ($result['quantity'] < $result['minimum'])) && $this->config->get('aviseme_status')) {
+                              $price = '<strong style="color:#f00;">esgotado</strong>';
+                              $tax = '';
+                              $special = '';
+                        }
+                      ]]>
+                  </add>
+            </operation>
+      </file>
+      <file path="catalog/controller/module/" name="featured.php">
+            <operation error="skip">
+                  <search position="before"><![CDATA[$this->data['products'][] = array(]]>
+                  </search>
+                  <add><![CDATA[
+                        if ($product_info['subtract'] && (!$product_info['quantity'] || ($product_info['quantity'] < $product_info['minimum'])) && $this->config->get('aviseme_status')) {
+                              $price = '<strong style="color:#f00;">esgotado</strong>';
+                              $tax = '';
+                              $special = '';
+                        }
+                      ]]>
+                  </add>
+            </operation>
+      </file>
+
+      <file path="catalog/controller/product/" name="category.php,search.php,special.php,manufacturer.php">
+            <operation error="skip">
+                  <search position="before"><![CDATA[$this->data['products'][] = array(]]>
+                  </search>
+                  <add><![CDATA[
+                      if ($result['subtract'] && (!$result['quantity'] || ($result['quantity'] < $result['minimum'])) && $this->config->get('aviseme_status')) {
+                              $price = '<strong style="color:#f00;">esgotado</strong>';
+                              $tax = '';
+                              $special = '';
+                        }
+                      ]]>
+                  </add>
+            </operation>
+      </file>
+      <file name="catalog/view/theme/*/template/product/product.tpl">
+            <operation error="abort">
+                  <search position="after" index="1"><![CDATA[<div class="right">]]>
+                  </search>
+                  <add><![CDATA[
+                              <?php if (!$aviseme) { ?>
+                              ]]>
+                  </add>
+            </operation>
+            <operation error="abort">
+                  <search position="before" offset="2" index="1"><![CDATA[<div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>]]>
+                  </search>
+                  <add><![CDATA[
+				<?php } else { ?>
+                                    <?php echo $aviseme; ?>
+                              <?php } ?>]]>
+                  </add>
+            </operation>
+      </file>
+      <file path="catalog/view/theme/*/template/module/" name="bestseller.tpl,featured.tpl,latest.tpl,special.tpl">
+            <operation error="skip">
+                  <search position="replace"><![CDATA[<div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>]]>
+                  </search>
+                  <add><![CDATA[
+                      <?php if ($product['price'] == '<strong style="color:#f00;">esgotado</strong>') { ?>
+                        <div class="cart"><a href="<?php echo $product['href']; ?>" class="button"><span>Avise-me</span></a></div>
+                       <?php } else { ?>
+                        <div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>
+                        <?php } ?>
+                      ]]>
+                  </add>
+            </operation>
+      </file>
+      <file path="catalog/view/theme/*/template/product/" name="category.tpl,search.tpl,special.tpl,manufacturer_info.tpl">
+            <operation error="skip">
+                  <search position="replace"><![CDATA[<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />]]>
+                  </search>
+                  <add><![CDATA[
+                      <?php if ($product['price'] == '<strong style="color:#f00;">esgotado</strong>') { ?>
+                        <a href="<?php echo $product['href']; ?>" class="button"><span>Avise-me</span></a>
+                       <?php } else { ?>
+                        <input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+                        <?php } ?>
+                      ]]>
+                  </add>
+            </operation>
+      </file>
+</modification>
