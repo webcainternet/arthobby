@@ -108,6 +108,11 @@
 	<div class="container" style="margin-top: 10px;">
 
 		<div style="text-align: center;">
+			<div style="float: left; width: 100px;">
+				<p><script type="text/javascript">TrustLogo("/image/comodo_secure_100x85_transp.png", "SC5", "none");</script><a href="javascript:if(window.open('https://secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://arthobby.com.br/&amp;x=6&amp;y=5','tl_wnd_credentials'+(new Date()).getTime(),'toolbar=0,scrollbars=1,location=1,status=1,menubar=1,resizable=1,width=374,height=660,left=60,top=120')){};tLlB(tLTB);" onmouseover="tLeB(event,'https://secure.comodo.com/ttb_searcher/trustlogo?v_querytype=C&amp;v_shortname=SC5&amp;v_search=https://arthobby.com.br/&amp;x=6&amp;y=5','tl_popupSC5')" onmousemove="tLXB(event)" onmouseout="tLTC('tl_popupSC5')" ondragstart="return false;"><img src="/image/comodo_secure_100x85_transp.png" border="0" onmousedown="return tLKB(event,'https://secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&amp;v_shortname=SC5&amp;v_search=https://arthobby.com.br/&amp;x=6&amp;y=5');" oncontextmenu="return tLLB(event);"></a><!----></p>
+			</div>
+
+
 			<div id="copyright" style="margin-bottom: 10px;">
 				<div>Art hobby modelismo Ltda | CNPJ 09.499.182/0001-61 | IE 278170820118 | Estrada da Aldeia,186 - Granja Viana - Cotia - SP</div>
 				<div>Todos os preços e condições do site são validos apenas para compras on line e não se aplicam para nossas lojas físicas</div>
@@ -125,4 +130,5 @@
 </div>
 </div>
 </div>
+
 </body></html>
